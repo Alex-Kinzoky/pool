@@ -647,7 +647,7 @@ input::placeholder{
         height: calc(100vw * (550 / 320));
         padding-left: 15px;
         padding-right: 15px;
-        width: 100vw;
+        width: calc(100vw - 30px);
     }
     .header-content-text{
         width: calc(100vw - 30px);
@@ -738,10 +738,10 @@ input::placeholder{
         flex-direction: column;
     }
     .input-contact .input input{
-        width: calc(100vw - 45px);
+        width: calc(100vw - 30px);
     }
     .input-contact .input .hr{
-        width: calc(100vw - 45px);
+        width: calc(100vw - 30px);
     }
     .input-contact .input input::placeholder{
         font-size: 20px;
@@ -751,7 +751,7 @@ input::placeholder{
         width: calc(100vw * (250 / 320));
     }
     .help-button{
-        width: calc(100vw - 45px);
+        width: calc(100vw - 30px);
         height: 55px;
     }
     .help-decor {
@@ -805,5 +805,11 @@ input::placeholder{
         width: 100vw;
         margin-top: 350px;
         height: calc(100vw * (350 / 320));
+    }
+    .about-us-item{
+        width: calc(100vw * (265 / 320));
+    }
+    .about-us-2-content{
+        margin: 0;
     }
 }
