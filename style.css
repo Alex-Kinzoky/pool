@@ -738,10 +738,10 @@ input::placeholder{
         flex-direction: column;
     }
     .input-contact .input input{
-        width: calc(100vw - 30px);
+        width: calc(100vw - 45px);
     }
     .input-contact .input .hr{
-        width: calc(100vw - 30px);
+        width: calc(100vw - 45px);
     }
     .input-contact .input input::placeholder{
         font-size: 20px;
@@ -751,7 +751,7 @@ input::placeholder{
         width: calc(100vw * (250 / 320));
     }
     .help-button{
-        width: calc(100vw - 30px);
+        width: calc(100vw - 45px);
         height: 55px;
     }
     .help-decor {
