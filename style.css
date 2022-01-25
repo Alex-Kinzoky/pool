@@ -114,6 +114,7 @@ body{
 .offer-card{
     overflow: hidden;
 }
+
 .offer-card-line{
     width: calc((100vw * (614 / 1920)) * 4);
     display: flex;
@@ -149,7 +150,7 @@ body{
     height: calc(100vw * (1700 / 1920));
     position: absolute;
     right: 0;
-    top: 800px;
+    margin-top: 200px;
     z-index: -1;
 }
 .about-us-1{
@@ -190,7 +191,7 @@ body{
 .about-us-1-content-images img{
     width: calc(100vw * (452 / 1920));
     height: calc(100vw * (531 / 1920));
-    margin: 30px;
+    margin: calc(100vw * (30 / 1920));
 }
 .about-us-1-decor{
     background-image: url(images/01-decor.svg);
@@ -246,6 +247,9 @@ body{
     font-size: 30px;
     color: #F6F6F6;
     margin-top: 18px;
+}
+.help .light-point{
+    display: none;
 }
 .help-form{
     height: 450px;
@@ -541,8 +545,8 @@ input::placeholder{
     }
 }
 @media (max-width:960px){
-    .header-image{
-        right: calc(100vw * (-140 / 960));
+    .pool{
+        display: none;
     }
     .header-content-text-big {
         width: 100%;
@@ -627,9 +631,6 @@ input::placeholder{
     .background-under{
         display: none;
     }
-    .pool{
-        display: none;
-    }
     .header-content{
         padding-left: 40px;
     }
@@ -643,7 +644,7 @@ input::placeholder{
     
     }
     .header-content{
-        height: calc(100vw * (650 / 320));
+        height: calc(100vw * (550 / 320));
         padding-left: 15px;
         padding-right: 15px;
         width: 100vw;
@@ -759,8 +760,6 @@ input::placeholder{
         height: 550px;
         margin-top: -230px;
     }
-    .help{
-    }
     .contact{
         flex-direction: column;
         height: calc(100vw * (550 / 320));
@@ -793,5 +792,18 @@ input::placeholder{
         width: calc(100vw - 30px);
         align-items: center;
         height: 50px;
+    }
+    .offers .light-point{
+        display: none;
+    }
+    .help .light-point{
+        display: block;
+        margin-top: 0;
+    }
+    .contact-decor{
+        background-image: url(images/contact-decor-mobile.svg);
+        width: 100vw;
+        margin-top: 350px;
+        height: calc(100vw * (350 / 320));
     }
 }
