@@ -175,6 +175,7 @@ body{
     justify-content: space-around;
     position: absolute;
     right: 0;
+    overflow: hidden;
 }
 .about-us-1-content-text{
     font-family: 'Ubuntu', sans-serif;
