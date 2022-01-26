@@ -1,0 +1,17 @@
+doctype html 
+html 
+    include ./components/head.pug 
+    body 
+        include ./components/header.pug 
+        .content.content-catalog
+            .nav-line
+                .nav-line-title Каталог
+                .nav-line-path
+                    a(href="index.html") Главная 
+            button.button-choise.gradient-button Выбрать категорию
+                img(src="images/arrow-down.svg", alt="")
+            .catalog-menu 
+                each name in ['Бассейны', 'Химия для бассейнов', 'Пылесосы для бассейнов', 'Покрытия для бассейнов ', 'Аксессуары для бассейнов', 'Оборудование', 'Трубы, краны, фитинги', 'Лестницы и поручни', 'Закладное оборудование для бассейнов', 'Запчасти', 'Освещение бассейна', 'Переливная решетка', 'Аттракционы', 'Отделочные материалы', 'Осушители воздуха для бассейнов']
+                    .gradient-button
+                        .catalog-menu-part= name
+        include ./components/footer.pug

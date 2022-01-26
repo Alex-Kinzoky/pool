@@ -1,0 +1,179 @@
+doctype html
+html
+  head
+    link(rel="stylesheet", href="style.css")
+    link(rel="stylesheet", href="style-mobile.css")
+    link(rel="preconnect", href="https://fonts.googleapis.com")
+    link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin)
+    link(href="https://fonts.googleapis.com/css2?family=Exo:wght@500&family=Ubuntu:wght@300;400&display=swap", rel="stylesheet")
+    meta(name="viewport", content="width=device-width; initial-scale=1.0")
+    meta(charset="utf-8")
+    script(type="text/javascript", src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js")
+    script(type="text/javascript", src="poolscript.js")
+  body
+    .menu-block
+      .menu-block-top
+        button.menu-block-profile
+          img(src="images/profile.svg", alt="")
+          | Войти
+        button.menu-block-close
+          img(src="images/close.svg", alt="")
+      .menu-block-content
+        .menu-block-list.font-30
+          a(href="#") Главная
+          a(href="#") Каталог
+          a(href="#") Акции
+          a(href="#") Услуги 
+          a(href="#") О компании
+          a(href="#") Блог
+          a(href="#") Доставка и оплата
+          a(href="#") Контакты
+        .menu-block-contact
+          .menu-block-social
+            a(href="#")
+              img(src="images/social.svg", alt="")
+              | Instagram
+            a(href="#")
+              img(src="images/social.svg", alt="")
+              | Facebook
+            a(href="#")
+              img(src="images/social.svg", alt="")
+              | Вконтакте
+          .menu-block-contact-bottom
+            .menu-block-contact-bottom-part sale@aquavisa.ru
+            .menu-block-contact-bottom-part +7 (812) 40-000-40
+    .header
+      .header-nav
+        .logo
+        button.menu-button
+          img(src="images/menu.svg", alt="")
+      .header-image
+        .background-header
+        .pool
+        .background-under
+      .header-content
+        .header-content-text
+          .header-content-text-big Совершенство
+            br
+            | 
+            | в каждом бассейне
+          .header-content-text-small Поставляем оборудование для бассейнов,
+            br
+            | работаем с лучшими производителями
+          button.header-content-text-button Заказать чашу
+    .offers
+      .label Предложения для вас 
+      .offer-card
+        .offer-card-line
+          .card
+            img(src="images/offer-1.svg", alt="")
+            .card-text Бассейны
+          .card
+            img(src="images/offer-2.svg", alt="")
+            .card-text Товары для бассейна
+          .card
+            img(src="images/offer-3.svg", alt="")
+            .card-text Укрытие бассейна
+          .card
+      .light-point
+    .about-us
+      .label Немного о нас
+      .about-us-1
+        .about-us-number
+        .about-us-1-content
+          .about-us-1-content-text
+            | Компания AquaVisa занимается поставкой оборудования для 
+            | бассейнов, снабжением, оптовой продажей строительных материалов 
+            | и специального оснащения для бассейнов, бань, хаммамов и спа-
+            | комплексов по всей России и СНГ. Мы предоставляем широкий 
+            | ассортимент ведущих поставщиков и комплексные 
+            | услуги профессиональных консультантов.
+          .about-us-1-content-images
+            img(src="images/01-1.png", alt="")
+            img(src="images/01-2.png", alt="")
+            img(src="images/01-3.png", alt="")
+        .about-us-1-decor
+      .about-us-2
+        .about-us-number
+        .about-us-2-content
+          .about-us-item
+            .about-us-item-icon
+              img(src="images/02-1.svg", alt="")
+            .about-us-item-h Комплексный подход
+            .about-us-item-text
+              | Доставка оборудования и химии, 
+              | техническое сопровождение, 
+              | сервисное обслуживание 
+              | бассейнов и оборудования для 
+              | них, консультационные услуги 
+              | (строительство бассейнов; подбор 
+              | оборудования; эксплуатация).
+          .about-us-item
+            .about-us-item-icon
+              img(src="images/02-2.svg", alt="")
+            .about-us-item-h Высокий профессионализм
+            .about-us-item-text
+              | Наш опыт и знания позволяют 
+              | оценивать все аспекты 
+              | и особенности каждого объекта, 
+              | принимать оптимальные решения 
+              | по подбору и доставке материалов, 
+              | исходя из его масштабов 
+              | и функциональных особенностей.
+          .about-us-item
+            .about-us-item-icon
+              img(src="images/02-3.svg", alt="")
+            .about-us-item-h Отличное соотношение цены и качества
+            .about-us-item-text
+              | Мы прекрасно ориентируемся 
+              | в рынке и готовы предоставлять 
+              | скидки как физическим лицам, 
+              | так и оптовым покупателям.
+          .about-us-item
+            .about-us-item-icon
+              img(src="images/02-4.svg", alt="")
+            .about-us-item-h Широкий ассортимент
+            .about-us-item-text
+              | Мы работаем со всемирно 
+              | известными производителями 
+              | оборудования для бассейнов:
+    .help
+      .light-point
+      .help-decor
+      .label Остались вопросы?
+      .content
+        .label-text Получите помощь специалиста
+        .card.card-help
+          img(src="images/card.svg", alt="")
+          .card-text Данные успешно отправлены, спасибо!
+          a.help-button.return-site(href="index.html") Вернуться на сайт
+        form.help-form(action="", method="post")
+          .input-contact
+            .input
+              input(type="text", name="name", placeholder="Ваше имя")
+              .hr
+            .input
+              input(type="tel", name="phone", placeholder="Телефон")
+              .hr
+          .help-text
+            | Нажимая на кнопку «Отправить заявку», Вы соглашаетесь с условиями на передачу
+            | персональных данных
+          input.help-button(type="submit", value="Отправить заявку")
+    .contact
+      .map
+        img(src="images/map.png", alt="")
+      .contact-content
+        .contact-text
+          .contact-text-part Санкт-Петербург, Витебский пр., д. 17
+          .contact-text-part sale@aquavisa.ru
+          .contact-text-part +7 (812) 40-000-40
+      .contact-decor
+    .footer
+      .content
+        .copyright 2021 © AquaVisa
+        .right-footer
+          a.offert(href="#") Договор оферты
+          a.politic(href="#") Политика конфиденциальности
+    button.arrow-up-button
+      .arrow-up-text наверх
+      .arrow-up-arrow

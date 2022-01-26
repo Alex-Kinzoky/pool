@@ -1,0 +1,431 @@
+@media (max-width: 960px) {
+    .menu-block {
+      height: 450px;
+    }
+  
+    .menu-block-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  
+    .menu-block-profile {
+      font-size: 20px;
+  
+      img {
+        width: 37px;
+        height: 39px;
+        margin-right: 16px;
+      }
+    }
+  
+    .menu-block-close {
+      width: 35px;
+      height: 35px;
+  
+      img {
+        width: 35px;
+        height: 35px;
+      }
+    }
+  
+    .arrow-up-button, .pool {
+      display: none;
+    }
+  
+    .header-content-text-big, .header-content-text-small {
+      width: 100%;
+    }
+  
+    .header-content-text {
+      width: calc(100vw * (600 / 960));
+      height: 245px;
+    }
+  
+    .logo {
+      background-image: url(images/logo.svg);
+      background-size: cover;
+      width: 98px;
+      height: 48px;
+    }
+  
+    .menu-button {
+      background: none;
+      width: 65px;
+      height: 65px;
+      border: none;
+  
+      img {
+        width: 65px;
+        height: 65px;
+      }
+    }
+  
+    .header-nav {
+      height: 78px;
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+  
+    .about-us-2 {
+      height: 900px;
+    }
+  
+    .about-us-2-content {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+    }
+  
+    .about-us-item {
+      width: 282px;
+      height: auto;
+    }
+  
+    .about-us-item-h {
+      font-size: 20px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+  
+    .about-us-item-text {
+      height: auto;
+      margin-bottom: 50px;
+    }
+  
+    .input-contact {
+      width: calc(100vw - 100px);
+  
+      .input {
+        input, .hr {
+          width: 40vw;
+        }
+      }
+    }
+  
+    .about-us-1-content-text {
+      align-self: end;
+      width: 60vw;
+      padding-right: 50px;
+    }
+  
+    .header-content-text-button {
+      height: 55px;
+    }
+  
+    .footer .content {
+      font-size: 14px;
+    }
+    .card-help{
+        width: 400px;
+        height: 230px;
+        overflow: hidden;
+        .card-text{
+            font-size: 18px;
+            margin-top: -10px;
+            margin-bottom: 15px;
+        }
+        .help-button{
+            width: 230px;
+            height: 50px;
+            font-size: 16px;
+        }
+    }
+  }
+  
+  @media (max-width: 640px) {
+    //.card-help{
+        //width: calc(100vw * (307 / 320));
+        //height: calc(100vw * (176 / 320));
+        //.card-text{
+            //font-size: 14px;
+        //}
+        //.help-button{
+            //width: calc(100vw * (175 / 320));
+            //height: calc(100vw * (38 / 320));
+            //font-size: 12px;
+        //}
+    //}
+    .menu-block {
+      height: 834px;
+    }
+  
+    .menu-block-content {
+      flex-direction: column;
+      height: 650px;
+      padding-left: 36px;
+    }
+  
+    .menu-block-social a img {
+      width: calc(100vw * (145 / 320));
+      margin-right: 0;
+    }
+  
+    .menu-block-list a {
+      height: 43px;
+    }
+  
+    .menu-block-social a {
+      flex-direction: row-reverse;
+      align-self: flex-start;
+    }
+  
+    .menu-block-contact-bottom-part {
+      text-align: start;
+    }
+  
+    .menu-block-contact {
+      height: 260px;
+      justify-content: space-between;
+      width: calc(100vw - (100vw * (200 / 1920) + 36px));
+      overflow: hidden;
+    }
+  
+    .header-image {
+      right: 0;
+    }
+  
+    .header-content {
+      width: calc(100vw * (400 / 960));
+    }
+  
+    .background-under {
+      display: none;
+    }
+  
+    .header-content {
+      padding-left: 40px;
+    }
+  
+    .background-header {
+      background-image: url(images/header-background-mobile.svg);
+      position: absolute;
+      width: 100vw;
+      height: calc(100vw * (910 / 320));
+      top: 0;
+      right: 0;
+    }
+  
+    .header-content {
+      height: calc(100vw * (550 / 320));
+      padding-left: 15px;
+      padding-right: 15px;
+      width: calc(100vw - 30px);
+    }
+  
+    .header-content-text {
+      width: calc(100vw - 30px);
+      height: 261px;
+    }
+  
+    .header-content-text-big {
+      font-size: 30px;
+    }
+  
+    .header-content-text-button {
+      height: 55px;
+      width: 100%;
+    }
+  
+    .label {
+      padding-left: 15px;
+      width: calc(100vw * (250 / 320));
+    }
+  
+    .offer-card-line .card {
+      font-size: 14px;
+      width: calc(100vw * (265 / 320));
+      height: calc(100vw * (154 / 320));
+    }
+  
+    .offers {
+      height: calc(100vw * (380 / 320));
+    }
+  
+    .offer-card-line {
+      width: calc((100vw * (270 / 320)) * 4);
+      padding-left: 10px;
+  
+      .card {
+        img {
+          width: calc(100vw * (55 / 320));
+          height: calc(100vw * (65 / 320));
+        }
+  
+        &:first-child img {
+          width: calc(100vw * (120 / 320));
+        }
+      }
+    }
+  
+    .about-us-1 {
+      flex-direction: column;
+      height: calc(100vw * (865 / 320));
+      padding-left: 15px;
+    }
+  
+    .about-us-1-content {
+      height: calc(100vw * (865 / 320));
+      position: static;
+      overflow: hidden;
+    }
+  
+    .about-us-1-content-text {
+      width: calc(100vw - 30px);
+      font-size: 14px;
+    }
+  
+    .about-us-number {
+      width: calc(100vw * (270 / 320));
+      height: calc(100vw * (312 / 320));
+    }
+  
+    .about-us-1-content-images {
+      img {
+        width: calc(100vw * (224 / 320));
+        height: calc(100vw * (263 / 320));
+        margin: 15px;
+      }
+  
+      display: flex;
+    }
+  
+    .about-us-1-decor {
+      background-image: url(images/01-decor-mobile.svg);
+      width: 100vw;
+      height: calc(100vw * (510 / 320));
+      margin-top: calc(100vw * (280 / 320));
+    }
+  
+    .about-us-2 {
+      flex-direction: column;
+      height: 1250px;
+      padding-left: 15px;
+  
+      .about-us-number {
+        width: calc(100vw * (270 / 320));
+        height: calc(100vw * (177 / 320));
+      }
+    }
+  
+    .about-us-1-content {
+      height: 1200px;
+    }
+  
+    .content {
+      padding-left: 15px;
+    }
+  
+    .label-text {
+      font-size: 14px;
+    }
+  
+    .input-contact {
+      flex-direction: column;
+  
+      .input {
+        input, .hr {
+          width: calc(100vw - 30px);
+        }
+  
+        input::placeholder {
+          font-size: 20px;
+        }
+      }
+    }
+  
+    .help-text {
+      font-size: 12px;
+      width: calc(100vw * (250 / 320));
+    }
+  
+    .help-button {
+      width: calc(100vw - 30px);
+      height: 55px;
+    }
+  
+    .help-decor {
+      background-image: url(images/help-decor-mobile.svg);
+      width: 290px;
+      height: 550px;
+      margin-top: -230px;
+    }
+  
+    .contact {
+      flex-direction: column;
+      height: calc(100vw * (550 / 320));
+      justify-content: space-between;
+    }
+  
+    .contact-text {
+      width: 100vw;
+    }
+  
+    .map img {
+      height: auto;
+      width: 100vw;
+    }
+  
+    .contact-text {
+      height: 140px;
+    }
+  
+    .contact-text-part {
+      font-size: 24px;
+      width: calc(100vw - 30px);
+      letter-spacing: 0.07em;
+    }
+  
+    .footer .content {
+      flex-direction: column-reverse;
+      width: calc(100vw - 30px);
+      justify-content: space-around;
+      margin-top: 100px;
+      margin-bottom: 80px;
+    }
+  
+    .right-footer {
+      flex-direction: column;
+      width: calc(100vw - 30px);
+      align-items: center;
+      height: 50px;
+    }
+  
+    .offers .light-point {
+      display: none;
+    }
+  
+    .help .light-point {
+      display: block;
+      margin-top: 0;
+    }
+  
+    .contact-decor {
+      background-image: url(images/contact-decor-mobile.svg);
+      width: 100vw;
+      margin-top: 315px;
+      height: calc(100vw * (350 / 320));
+    }
+  
+    .about-us-item {
+      width: calc(100vw * (282 / 320));
+    }
+  
+    .about-us-2-content {
+      margin: 0;
+    }
+  }
+  @media (max-width: 420px) {
+    .card-help{
+        width: calc(100vw * (290 / 320));
+        height: calc(100vw * (170 / 320));
+        .card-text{
+            font-size: 14px;
+        }
+        .help-button{
+            width: calc(100vw * (175 / 320));
+            height: calc(100vw * (38 / 320));
+            font-size: 12px;
+        }
+    }
+  }

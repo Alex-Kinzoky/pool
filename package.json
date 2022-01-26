@@ -1,0 +1,23 @@
+{
+  "name": "pool",
+  "version": "1.0.0",
+  "description": "site",
+  "main": "poolscript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alex-Kinzoky/pool.git"
+  },
+  "keywords": [
+    "1111"
+  ],
+  "author": "Aleksandrova Aleksandra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alex-Kinzoky/pool/issues"
+  },
+  "homepage": "https://github.com/Alex-Kinzoky/pool#readme"
+}
