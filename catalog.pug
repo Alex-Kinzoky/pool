@@ -2,6 +2,7 @@ doctype html
 html 
     include ./components/head.pug 
     body 
+        .decor-header
         include ./components/header.pug 
         .content.content-catalog
             .nav-line
@@ -13,7 +14,56 @@ html
                     .button-choise-text Выбрать категорию
                     img(src="images/arrow-down.svg", alt="")
             .catalog-menu 
-                each name in ['Бассейны', 'Химия для бассейнов', 'Пылесосы для бассейнов', 'Покрытия для бассейнов ', 'Аксессуары для бассейнов', 'Оборудование', 'Трубы, краны, фитинги', 'Лестницы и поручни', 'Закладное оборудование для бассейнов', 'Запчасти', 'Освещение бассейна', 'Переливная решетка', 'Аттракционы', 'Отделочные материалы', 'Осушители воздуха для бассейнов']
+                each name in ['Бассейны', 'Химия для бассейнов', 'Пылесосы для бассейнов', 'Покрытия для бассейнов', 'Аксессуары для бассейнов', 'Оборудование', 'Трубы, краны, фитинги', 'Лестницы и поручни', 'Закладное оборудование для бассейнов', 'Запчасти', 'Освещение бассейна', 'Переливная решетка', 'Аттракционы', 'Отделочные материалы', 'Осушители воздуха для бассейнов']
                     .gradient-button
                         .catalog-menu-part= name
+            .catalog-podmenu 
+                button.show-all
+                    .show-all-text Посмотреть всё
+                    img(src="images/show-all.svg", alt="")
+                .catalog-podmenu-all.pool-c
+                    .catalog-podmenu-list
+                        a(href="#").catalog-podmenu-title Бассейны
+                        a(href="#").catalog-podmenu-link Композитные Бассейны
+                        a(href="#").catalog-podmenu-link Сборные Бассейны
+                    .catalog-podmenu-list
+                        a(href="#").catalog-podmenu-title Спа 
+                        a(href="#").catalog-podmenu-link Гидромассажные ванны (AstralPool)
+                        a(href="#").catalog-podmenu-link Гидромассажный бассейн “Mr.Spa”
+                        a(href="#").catalog-podmenu-link Гидромассажный бассейн FINN
+                        a(href="#").catalog-podmenu-link Гидромассажный бассейн IQUE
+                        a(href="#").catalog-podmenu-link Плавательные Спа Бассейны
+                    .catalog-podmenu-list
+                        a(href="#").catalog-podmenu-title Купели 
+                        a(href="#").catalog-podmenu-link Композитные Бассейны
+                        a(href="#").catalog-podmenu-link Сборные Бассейны
+                .catalog-podmenu-all.chemistry
+                    .catalog-podmenu-list
+                        a(href="#").catalog-podmenu-title Дезинфекция без хлора
+                        a(href="#").catalog-podmenu-title Комплексные препараты
+                        a(href="#").catalog-podmenu-title Органический хлор
+                        a(href="#").catalog-podmenu-title Неорганический хлор
+                        a(href="#").catalog-podmenu-title Средства для консервации бассейна (зима/лето)
+                    .catalog-podmenu-list
+                        a(href="#").catalog-podmenu-title Средства для коррекции PH (PH+ / PH-)
+                        a(href="#").catalog-podmenu-title Средства против водорослей (альгицид)
+                        a(href="#").catalog-podmenu-title Средства против мутности (флокулянт/коагулянт)
+                        a(href="#").catalog-podmenu-title Уход за чашей бассейна / Вспомогательные реагенты
+                        a(href="#").catalog-podmenu-title Вспомогательные реагенты (AstrallPool)
+                        a(href="#").catalog-podmenu-title Фотометры, тестеры и рН-метр для измерения показателей воды
+                .catalog-podmenu-all.equipment
+                    .catalog-podmenu-list
+                        a(href="#").catalog-podmenu-link Нагрев воды для бассейнов
+                        a(href="#").catalog-podmenu-link Дезинфицирующее оборудование для бассейнов
+                        a(href="#").catalog-podmenu-link Фильтрация воды для бассейнов 
+                        a(href="#").catalog-podmenu-link Насосы для бассейнов
+                        a(href="#").catalog-podmenu-link Блоки управления и электроавтоматика для бассейнов
+                .catalog-podmenu-all.coverage
+                    .catalog-podmenu-list
+                        a(href="#").catalog-podmenu-link Теплосберегающие покрытия и наматывающие устройства для бассейнов
+                        a(href="#").catalog-podmenu-link Павильоны для бассейнов
+                        a(href="#").catalog-podmenu-link Жалюзийное покрытие для бассейнов
+                        a(href="#").catalog-podmenu-link Покрытия для бассейнов
+                        a(href="#").catalog-podmenu-link Блоки управления и электроавтоматика для бассейнов
+
         include ./components/footer.pug

@@ -2,6 +2,8 @@ $(document).ready(function(){
     $('.arrow-up-button').hide();
     $('.menu-block').hide()
     $('.card-help').hide()
+    $('.catalog-podmenu').hide()
+    
 	$('.menu-button').click(function(){
 		$('.menu-block').slideToggle(300, function(){
             $(this).show();
@@ -21,7 +23,7 @@ $(document).ready(function(){
     $(function(){
         if ( $(window).width() > 992 ) {
             $(window).scroll(function(){
-                if($(window).scrollTop() > 300) {
+                if($(window).scrollTop() > 500) {
                     $('.arrow-up-button').show();
                 } else {
                     $('.arrow-up-button').hide();
@@ -53,5 +55,51 @@ $(document).ready(function(){
     });
     $('.return-site').click(function(){
         $(location).attr('href','index.html');
+    })
+    $('.catalog-menu-part').click(function(){
+        if ($(this).text() == 'Бассейны'){
+            $('.catalog-podmenu-all').hide()
+            $('.catalog-podmenu').show()
+            $('.pool-c').show()
+            $('.catalog-menu-part').css({
+                'background' : '#101014'
+            })
+            $(this).css({
+                'background' : '#0044FF'
+            })
+        }
+        if ($(this).text() == 'Химия для бассейнов'){
+            $('.catalog-podmenu-all').hide()
+            $('.catalog-podmenu').show()
+            $('.chemistry').show()
+            $('.catalog-menu-part').css({
+                'background' : '#101014'
+            })
+            $(this).css({
+                'background' : '#0044FF'
+            })
+        }
+        if ($(this).text() == 'Оборудование'){
+            $('.catalog-podmenu-all').hide()
+            $('.catalog-podmenu').show()
+            $('.equipment').show()
+            $('.catalog-menu-part').css({
+                'background' : '#101014'
+            })
+            $(this).css({
+                'background' : '#0044FF'
+            })
+        }
+        if ($(this).text() == 'Покрытия для бассейнов'){
+            $('.catalog-podmenu-all').hide()
+            $('.catalog-podmenu').show()
+            $('.coverage').show()
+            $('.catalog-menu-part').css({
+                'background' : '#101014'
+            })
+            $(this).css({
+                'background' : '#0044FF'
+            })
+        }
     })
 });

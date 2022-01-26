@@ -435,6 +435,12 @@
   .about-us-2-content {
     margin: 0;
   }
+
+  .decor-header {
+    background: url(images/decor-header-mobile.svg);
+    width: 100vw;
+    height: 450px;
+  }
 }
 @media (max-width: 420px) {
   .card-help {

@@ -588,6 +588,47 @@ body {
       border-radius: 34px;
       background: #101014;
   }
+  .show-all{
+      display: flex;
+      font-size: 20px;
+      align-items: center;
+      img{
+          padding: 0 7px;
+      }
+  }
+  .catalog-podmenu {
+      padding: calc(100vw * (130 / 1920)) calc(100vw * (200 / 1920));
+  }
+  .catalog-podmenu-all {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 63px;
+      flex-wrap: wrap;
+      .catalog-podmenu-list{
+        min-width: 200px;
+        padding-right: 5px;
+        .catalog-podmenu-title{
+            display: block;
+            font-size: 30px;
+            font-weight: 400;
+            padding: 14px 0;
+        }
+        .catalog-podmenu-link{
+            display: block;
+            padding: 7px 0;
+        }
+      } 
+  }
+  .decor-header{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url(images/decor-header.svg);
+    background-size: cover;
+    width: calc(100vw * (1016 / 1920));
+    height: calc(100vw * (969 / 1920));
+    z-index: -1;
+  }
   
   @media (max-width: 1748px) {
     .header-content-text-big {
