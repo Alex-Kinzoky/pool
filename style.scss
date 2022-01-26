@@ -12,8 +12,12 @@ body {
     font-weight: 300;
     font-size: 24px;
     color: #F6F6F6;
+    background: none;
   }
-  
+  button{
+      border: none;
+      
+  }
   a {
     color: #F6F6F6;
     text-decoration: none;
@@ -22,7 +26,10 @@ body {
   .font-30 {
     font-size: 30px;
   }
-  
+  #button-catalog{
+    display: none;
+    
+}
   .menu-block {
     position: absolute;
     left: 0;
@@ -555,16 +562,13 @@ body {
       height: 180px;
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;
+      justify-content: space-evenly;
       .nav-line-title{
           font-size: 60px;
       }
       .nav-line-path{
           display: flex;
           align-items: center;
-          a{
-              height: 58px;
-          }
       }
   }
   .catalog-menu{
@@ -575,7 +579,6 @@ body {
       position: relative;
       border-radius: 34px;
       border-width: 2px;
-      height: 70px;
       margin: 11px;
       background:linear-gradient(94.29deg, #0044FF 26.91%, #00A3FF 106.34%);
       padding: 1px;
@@ -585,6 +588,7 @@ body {
       border-radius: 34px;
       background: #101014;
   }
+  
   @media (max-width: 1748px) {
     .header-content-text-big {
       font-size: 70px;

@@ -12,6 +12,11 @@ button, input {
   font-weight: 300;
   font-size: 24px;
   color: #F6F6F6;
+  background: none;
+}
+
+button {
+  border: none;
 }
 
 a {
@@ -21,6 +26,10 @@ a {
 
 .font-30 {
   font-size: 30px;
+}
+
+#button-catalog {
+  display: none;
 }
 
 .menu-block {
@@ -542,7 +551,7 @@ input::placeholder {
   height: 180px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-evenly;
 }
 .nav-line .nav-line-title {
   font-size: 60px;
@@ -550,9 +559,6 @@ input::placeholder {
 .nav-line .nav-line-path {
   display: flex;
   align-items: center;
-}
-.nav-line .nav-line-path a {
-  height: 58px;
 }
 
 .catalog-menu {
@@ -564,7 +570,6 @@ input::placeholder {
   position: relative;
   border-radius: 34px;
   border-width: 2px;
-  height: 70px;
   margin: 11px;
   background: linear-gradient(94.29deg, #0044FF 26.91%, #00A3FF 106.34%);
   padding: 1px;

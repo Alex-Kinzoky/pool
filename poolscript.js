@@ -28,7 +28,19 @@ $(document).ready(function(){
                 }
             });
         }
-      });
+        if ( $(window).width() < 640 ) {
+            $('.catalog-menu').hide()
+            ($('#button-catalog').click(function(){
+                if ($('.catalog-menu').is(':visible')){
+                    $('.catalog-menu').hide()
+                } else {
+                    $('.catalog-menu').show()
+                }
+            }));
+        } else {
+            $('.catalog-menu').show()
+        }
+    });
      
     $('.arrow-up-button').click(function(){
         $('html, body').animate({scrollTop: 0}, 600);
