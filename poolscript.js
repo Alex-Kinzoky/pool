@@ -48,6 +48,7 @@ $(document).ready(function(){
     });
     $('.help-button').click(function(){
         $('.card-help').show();
+        $('.help-form').hide();
         return false;
     });
     $('.return-site').click(function(){
