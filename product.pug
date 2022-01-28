@@ -1,0 +1,106 @@
+doctype html 
+html 
+    include ./components/head.pug 
+    body 
+        .decor-header
+        include ./components/header.pug 
+        .content.content-product
+            .nav-line
+                .nav-line-title Каталог
+                .nav-line-path
+                    a(href="index.html") Главная 
+                    img(src="images/nav-line-between.svg", alt="" class="nav-line-between")
+                    a(href="catalog.html") Каталог
+                    img(src="images/nav-line-between.svg", alt="" class="nav-line-between")
+                    a(href="product.html" class="active") Бассейны
+            .product-slide
+                .menu-and-podmenu
+                    .menu-left.card
+                        img(src="images/line.svg", alt="" class="images-line")
+                        .menu-left-part.active-left-menu
+                            a.menu-left-part-text Бассейны
+                                .menu-left-part-image
+                        each name in ['Химия для бассейнов', 'Пылесосы для бассейнов', 'Покрытия для бассейнов', 'Аксессуары для бассейнов', 'Оборудование', 'Трубы, краны, фитинги', 'Лестницы и поручни', 'Закладное оборудование для бассейнов', 'Запчасти', 'Освещение бассейна', 'Переливная решетка', 'Аттракционы', 'Отделочные материалы', 'Осушители воздуха для бассейнов']
+                            img(src="images/line.svg", alt="" class="images-line")
+                            .menu-left-part
+                                a.menu-left-part-text= name
+                                    .menu-left-part-image
+                        img(src="images/line.svg", alt="" class="images-line")
+                    #pool.drop-menu
+                        .drop-menu-list
+                            a(href="#").catalog-podmenu-title 
+                                img(src="images/social.svg", alt="") 
+                                | Бассейны
+                            a(href="#").catalog-podmenu-link Композитные Бассейны
+                            a(href="#").catalog-podmenu-link Сборные Бассейны
+                        .drop-menu-list
+                            a(href="#").catalog-podmenu-title
+                                img(src="images/social.svg", alt="")
+                                | Спа 
+                            a(href="#").catalog-podmenu-link Гидромассажные ванны (AstralPool)
+                            a(href="#").catalog-podmenu-link Гидромассажный бассейн “Mr.Spa”
+                            a(href="#").catalog-podmenu-link Гидромассажный бассейн FINN
+                            a(href="#").catalog-podmenu-link Гидромассажный бассейн IQUE
+                            a(href="#").catalog-podmenu-link Плавательные Спа Бассейны
+                        .drop-menu-list
+                            a(href="#").catalog-podmenu-title
+                                img(src="images/social.svg", alt="")
+                                | Купели 
+                            a(href="#").catalog-podmenu-link Композитные Бассейны
+                            a(href="#").catalog-podmenu-link Сборные Бассейны
+                .product-list 
+                    .product-list-top 
+                        #sort.product-list-top-part
+                            .top-part-text Сортировка
+                            img(src="images/sort.svg", alt="")
+                        #filter.product-list-top-part
+                            img(src="images/filter.svg", alt="")
+                            .top-part-text Фильтровать
+                            .drop-filter.card
+                                .filter-title Цена 
+                                .price-filter
+                                    .slider
+                                        input(type="range" min="0" step="1" max="13000" value="0" id="start" class="input-slider") 
+                                        input(type="range" min="0" step="1" max="13000" value="10000" id="end" class="input-slider") 
+                                        .range-line
+                                    .input-slider 
+                                        input(type="text" placeholder="От 2000")
+                                        input(type="text" placeholder="До 10 000")
+                                .brend-filter
+                                    .filter-title Бренд
+                                    .filter-checkbox
+                                        input(type="checkbox", name="AstralPool", id="1", class="checkbox")
+                                        label(for="1") AstralPool
+                                        input(type="checkbox", name="Bestway", id="2", class="checkbox")
+                                        label(for="2") Bestway
+                                        input(type="checkbox", name="Finn", id="3", class="checkbox")
+                                        label(for="3") Finn
+                                        input(type="checkbox", name="IQUE", id="4", class="checkbox")
+                                        label(for="4") IQUE
+                                        input(type="checkbox", name="PolarSpa", id="5", class="checkbox")
+                                        label(for="5") PolarSpa
+                    .product-cards 
+                        - for (var x = 0; x < 12; x++)
+                            .card
+                                .product-image
+                                    img(src="images/catalog-pool.png", alt="")
+                                .price 476 000 ₽
+                                .product-title Композитный бассейн ROYAL 9037 (с ППУ, цвет голубой)
+                                .art Артикул:18485
+                                .product-button
+                                    button.order 
+                                        img(src="images/buscket.svg", alt="")
+                                        .order-text Заказать
+                                    button.compare 
+                                        img(src="images/compare.svg", alt="")
+                                    button.like 
+                                        img(src="images/like.svg", alt="")
+                    .product-list-numbers
+                        a.product-list-number.active 1
+                        a.product-list-number 2
+                        a.product-list-number 3
+                        a.product-list-number ...
+                        a.product-list-number 6
+                        button.product-list-number.number-arrow
+                            img(src="images/number-arrow.svg", alt="")
+        include ./components/footer.pug

@@ -3,7 +3,8 @@ $(document).ready(function(){
     $('.menu-block').hide()
     $('.card-help').hide()
     $('.catalog-podmenu').hide()
-    
+    $('#pool').hide()
+    $('.drop-filter').hide()
 	$('.menu-button').click(function(){
 		$('.menu-block').slideToggle(300, function(){
             $(this).show();
@@ -29,6 +30,8 @@ $(document).ready(function(){
                     $('.arrow-up-button').hide();
                 }
             });
+        } else{
+            $('.arrow-up-button').hide();
         }
         if ( $(window).width() < 640 ) {
             $('.catalog-menu').hide()
@@ -100,6 +103,62 @@ $(document).ready(function(){
             $(this).css({
                 'background' : '#0044FF'
             })
+        }
+    });
+    $('.menu-left-part-text').hover(function(){
+        if ($(this).is(':contains("Бассейны")')) {
+            $('#pool').show()
+        }
+    }, function(){
+        setTimeout(function(){
+            if ($('#pool').is(':hover')){
+                $('#pool').show()
+            } else {
+                $('#pool').hide()
+            }
+        }, 200)
+    });
+    $('#pool').mouseleave(function(){
+        $('#pool').hide()
+    })
+    const sliders = document.querySelectorAll('input[type="range"]');
+
+    sliders[0].addEventListener('input', (e) => {
+        if(+sliders[0].value > +sliders[1].value){
+            sliders[1].value = +sliders[0].value;
+        }
+    });
+
+    sliders[1].addEventListener('input', (e) => {
+        if(+sliders[1].value < +sliders[0].value){
+            sliders[0].value = +sliders[1].value;
+        }
+    });
+
+    sliders.forEach((slider) => {
+        slider.addEventListener('change', () => {
+            console.log(`from ${sliders[0].value} to ${sliders[1].value}`);
+        })
+    });
+    var start = (259/13000) * $('#start').val()
+    var end = (259/13000) * $('#end').val()
+    $(".range-line").css({
+        'margin-left' : start+20,
+        'width' : end-start-35
+    })
+    $(".input-slider").change(function(){
+        var start = (259/13000) * $('#start').val()
+        var end = (259/13000) * $('#end').val()
+        $(".range-line").css({
+            'margin-left' : start+20,
+            'width' : end-start-35
+        })
+    }) 
+    $('#filter').click(function(){
+        if ($('.drop-filter').is(':visible')){
+            $('.drop-filter').hide()
+        } else{
+            $('.drop-filter').show()
         }
     })
 });
