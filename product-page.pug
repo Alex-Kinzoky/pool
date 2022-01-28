@@ -1,0 +1,111 @@
+doctype html 
+html 
+    include ./components/head.pug 
+    body 
+        .decor-header
+        include ./components/header.pug 
+        .content
+            .nav-line
+                .nav-line-title Композитный бассейн ROYAL 9037 
+                .nav-line-path
+                    a(href="index.html") Главная 
+                    img(src="images/nav-line-between.svg", alt="" class="nav-line-between")
+                    a(href="catalog.html") Каталог
+                    img(src="images/nav-line-between.svg", alt="" class="nav-line-between")
+                    a(href="product.html" class="active") Бассейны
+            .product-about 
+                .product-about-top 
+                    .product-about-image 
+                        .product-about-image
+                            img(src="images/catalog-pool.png", alt="")
+                        .product-about-image-color 
+                            img(src="images/color-white.svg", alt="")
+                            img(src="images/color-blue.svg", alt="")
+                            img(src="images/color-pink.svg", alt="")
+                    .product-about-top-left
+                        .product-about-small-spec 
+                            .product-about-title Характеристики
+                            .product-about-table
+                                .product-about-table-part 
+                                    .product-about-table-name Гарантия
+                                    img(src="images/social.svg", alt="")
+                                    .product-about-table-value 24 мес.
+                                .product-about-table-part 
+                                    .product-about-table-name Длина
+                                    img(src="images/social.svg", alt="")
+                                    .product-about-table-value 9 м
+                                .product-about-table-part 
+                                    .product-about-table-name Ширина
+                                    img(src="images/social.svg", alt="")
+                                    .product-about-table-value 3.7 м
+                                .product-about-table-part 
+                                    .product-about-table-name Глубина
+                                    img(src="images/social.svg", alt="")
+                                    .product-about-table-value 1.4 - 1.7 м
+                                a(href="#" class="blue-link") Подробнее
+                        .product-about-action 
+                            .product-about-price 476 000 ₽
+                            button.product-about-order
+                                img(src="images/buscket-white.svg", alt="")
+                                | Заказать
+                            .product-about-action-bottom 
+                                .product-about-compare 
+                                    img(src="images/compare.svg", alt="")
+                                    | В сравнение
+                                .product-about-like
+                                    img(src="images/like.svg", alt="")
+                                    | В избранное
+                .product-about-info 
+                    .product-about-info-menu 
+                        a(href="#" class='product-about-title') 
+                            | Описание
+                            img(src="images/underline.svg", alt="")
+                        a(href="#" class='product-about-title') 
+                            | Все характеристики
+                            img(src="images/underline.svg", alt="")
+                        a(href="#" class='product-about-title') 
+                            | Оплата и доставка
+                            img(src="images/underline.svg", alt="")
+                    .product-about-info-content
+                        #description
+                            .description-text 
+                                | Комплектация:
+                                br
+                                |Фильтрация: подбирается индивидуально
+                                br
+                                |Встроенная лестница: Есть
+                                br
+                                |
+                                br
+                                |«Аквабиография», наши преимущества:
+                                br
+                                |Гарантия на бассейны - 25 лет
+                                br
+                                |Обширная цветовая гамма Aqua3D
+                                br
+                                |Неограниченные размеры бассейнов
+                                br
+                                |Ведущие разработки и уникальный дизайн
+                                br
+                                |Материалы и комплектующие от мировых лидеров
+                                br
+                                |Доставка специализированным транспортом компании
+                    .product-acsess 
+                        .product-acsess-title 
+                        .product-cards
+                            - for (var x = 0; x < 5; x++)
+                                .card 
+                                    .product-image
+                                        img(src="images/acsess.png", alt="")
+                                    .price 476 000 ₽
+                                    a(class='.product-title' href='product-page.html') Композитный бассейн ROYAL 9037 (с ППУ, цвет голубой)
+                                    .art Артикул:18485
+                                    .product-button
+                                        button.order 
+                                            img(src="images/buscket.svg", alt="")
+                                            .order-text Заказать
+                                        button.compare 
+                                            img(src="images/compare.svg", alt="")
+                                        button.like 
+                                            img(src="images/like.svg", alt="")
+        include ./components/footer.pug
