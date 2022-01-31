@@ -1043,19 +1043,20 @@ body {
                     }
                 }
             }
+            #delivery{
+                .delivery-information {
+                    width: 593px;
+                    .product-about-title {
+                        margin: 40px 0 20px -94px;
+                        img{
+                            margin-right: 17px;
+                            width: 74px;
+                        }
+                    }
+                }
         }
       }
-      #delivery{
-        .delivery-information {
-            width: 593px;
-            .product-about-title {
-                margin: 40px 0 20px -94px;
-                img{
-                    margin-right: 17px;
-                    width: 74px;
-                }
-            }
-        }
+      
         .product-cards {
             margin-left: calc(100vw * (-202 / 1920));
             width: calc(100vw - 70px);
@@ -1130,6 +1131,10 @@ body {
             }
         }
     }
+    .product-acsess {
+        .product-acsess-title{
+            font-size: 28px;
+        }
       .product-cards{
           padding: 0 0 150px 0;
           width: 100%;
@@ -1142,6 +1147,50 @@ body {
             margin: calc(100vw * (17 /1920));
           }
          
+      }
+    }
+  }
+  .promotion-line{
+      height: 470px;
+      .offer-card{
+          .offer-card-line{
+              padding: 0;
+              width: calc(5 * (440px + 20px));
+              .card{
+                  padding: 0 0 62px 0;
+                  flex-direction: column;
+                  width: 440px;
+                  height: 328px;
+                  overflow: visible;
+                  margin-top: 25px;
+                  .star{
+                      background-image: url(images/star.svg);
+                      width: 82px;
+                      height: 82px;
+                      background-size: 100% 100%;
+                      align-self: flex-end;
+                      margin: -25px -7px 0 0;
+                  }
+                  .product-image{
+                      img{
+                          width: auto;
+                          height: auto;
+                      }
+                  }
+              }
+          }
+      }
+  }
+  .product-line{
+      
+      .product-title{
+          font-size: 40px;
+          padding: 100px 0;
+      }
+      .product-cards{
+        display: flex;
+        padding: 0;
+        width: calc(100vw - 57px);
       }
   }
   

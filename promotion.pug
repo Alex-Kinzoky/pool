@@ -1,0 +1,60 @@
+doctype html 
+html 
+    include ./components/head.pug 
+    body 
+        .decor-header
+        include ./components/header.pug 
+        .content
+            .nav-line
+                .nav-line-title Каталог
+                .nav-line-path
+                    a(href="index.html") Главная 
+                    img(src="images/nav-line-between.svg", alt="" class="nav-line-between")
+                    a(href="product.html" class="active") Акции
+            .offers.promotion-line
+                .offer-card
+                    .offer-card-line
+                        .card 
+                            .star 
+                            .product-image
+                                img(src="images/sale1.png", alt="")
+                            .font-30 Насосы для бассейнов
+                        .card 
+                            .star 
+                            .product-image
+                                img(src="images/sale2.png", alt="")
+                            .font-30 Противотоки для бассейнов
+                        .card 
+                            .star 
+                            .product-image
+                                img(src="images/sale3.png", alt="")
+                            .font-30 Роботы для бассейнов
+                        .card 
+                            .star 
+                            .product-image
+                                img(src="images/sale4.png", alt="")
+                            .font-30 Тепловые насосы
+                        .card 
+                            .star 
+                            .product-image
+                                img(src="images/sale1.png", alt="")
+                            .font-30 Насосы для бассейнов
+            .product-line
+                .product-title Лучшие предложения
+                .product-cards
+                    - for (var x = 0; x < 5; x++)
+                        .card 
+                            .product-image
+                                img(src="images/catalog-pool.png", alt="")
+                            .price 476 000 ₽
+                            a(class='.product-title' href='product-page.html') Композитный бассейн ROYAL 9037 (с ППУ, цвет голубой)
+                            .art Артикул:18485
+                            .product-button
+                                button.order 
+                                    img(src="images/buscket.svg", alt="")
+                                    .order-text Заказать
+                                button.compare 
+                                    img(src="images/compare.svg", alt="")
+                                button.like 
+                                    img(src="images/like.svg", alt="")
+        include ./components/footer.pug
