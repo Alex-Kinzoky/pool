@@ -5,6 +5,8 @@ $(document).ready(function(){
     $('.catalog-podmenu').hide()
     $('#pool').hide()
     $('.drop-filter').hide()
+    $('.product-about-info-podmenu').hide()
+    $('#description').show()
 	$('.menu-button').click(function(){
 		$('.menu-block').slideToggle(300, function(){
             $(this).show();
@@ -105,6 +107,32 @@ $(document).ready(function(){
             })
         }
     });
+    $('.color').click(function(){
+        if ($(this).attr('id') == 'white') {
+            $('.main-image').attr('src','images/catalog-pool.png')
+        };
+        if ($(this).attr('id') == 'blue'){
+            $('.main-image').attr('src','images/pool-blue.png')
+        };
+        if ($(this).attr('id') == 'pink'){
+            $('.main-image').attr('src','images/pool-pink.png')
+        };
+    });
+    $('.product-about-title').click(function(){
+        $('.product-about-title').removeClass('active');
+        $('.product-about-info-podmenu').hide();
+        $(this).addClass('active');
+        if ($(this).is(':contains("Описание")') ){
+            $('#description').show()
+        };
+        if ($(this).is(':contains("Все характеристики")')){
+            $('#specification').show()
+        };
+        if ($(this).is(':contains("Оплата и доставка")')){
+            $('#delivery').show()
+        };
+        return false;
+    });
     $('.menu-left-part-text').hover(function(){
         if ($(this).is(':contains("Бассейны")')) {
             $('#pool').show()
@@ -160,5 +188,6 @@ $(document).ready(function(){
         } else{
             $('.drop-filter').show()
         }
-    })
+    });
+    
 });

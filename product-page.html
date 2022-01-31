@@ -43,8 +43,8 @@
       <div class="product-about"> 
         <div class="product-about-top"> 
           <div class="product-about-image"> 
-            <div class="product-about-image"><img src="images/catalog-pool.png" alt=""/></div>
-            <div class="product-about-image-color"> <img src="images/color-white.svg" alt=""/><img src="images/color-blue.svg" alt=""/><img src="images/color-pink.svg" alt=""/></div>
+            <div class="product-about-image"><img class="main-image" src="images/catalog-pool.png" alt=""/></div>
+            <div class="product-about-image-color"> <img class="color" src="images/color-white.svg" alt="" id="white"/><img class="color" src="images/color-blue.svg" alt="" id="blue"/><img class="color" src="images/color-pink.svg" alt="" id="pink"/></div>
           </div>
           <div class="product-about-top-left">
             <div class="product-about-small-spec"> 
@@ -79,14 +79,110 @@
           </div>
         </div>
         <div class="product-about-info"> 
-          <div class="product-about-info-menu"> <a class="product-about-title" href="#">
-               Описание<img src="images/underline.svg" alt=""/></a><a class="product-about-title" href="#">
-               Все характеристики<img src="images/underline.svg" alt=""/></a><a class="product-about-title" href="#">
-               Оплата и доставка<img src="images/underline.svg" alt=""/></a></div>
+          <div class="product-about-info-menu"> <a class="product-about-title active" href="">
+               Описание
+              <div class="img"></div></a><a class="product-about-title" href="">
+               Все характеристики
+              <div class="img"></div></a><a class="product-about-title" href="#">
+               Оплата и доставка
+              <div class="img"></div></a></div>
           <div class="product-about-info-content">
-            <div id="description">
+            <div class="product-about-info-podmenu" id="description">
               <div class="description-text">
                  Комплектация:<br/>Фильтрация: подбирается индивидуально<br/>Встроенная лестница: Есть<br/><br/>«Аквабиография», наши преимущества:<br/>Гарантия на бассейны - 25 лет<br/>Обширная цветовая гамма Aqua3D<br/>Неограниченные размеры бассейнов<br/>Ведущие разработки и уникальный дизайн<br/>Материалы и комплектующие от мировых лидеров<br/>Доставка специализированным транспортом компании</div>
+            </div>
+            <div class="product-about-info-podmenu" id="specification">
+              <div class="product-about-table">
+                <div class="product-about-table-part"> 
+                  <div class="product-about-table-name">Ширина</div><img src="images/long-line.svg" alt=""/>
+                  <div class="product-about-table-value">370 см</div>
+                </div>
+                <div class="product-about-table-part"> 
+                  <div class="product-about-table-name">Глубина</div><img src="images/long-line.svg" alt=""/>
+                  <div class="product-about-table-value">1.4 - 1.7 м</div>
+                </div>
+                <div class="product-about-table-part"> 
+                  <div class="product-about-table-name">Длина</div><img src="images/long-line.svg" alt=""/>
+                  <div class="product-about-table-value">900 см</div>
+                </div>
+                <div class="product-about-table-part"> 
+                  <div class="product-about-table-name">Объем</div><img src="images/long-line.svg" alt=""/>
+                  <div class="product-about-table-value">36</div>
+                </div>
+                <div class="product-about-table-part"> 
+                  <div class="product-about-table-name">Форма</div><img src="images/long-line.svg" alt=""/>
+                  <div class="product-about-table-value">Прямоугольник</div>
+                </div>
+                <div class="product-about-table-part"> 
+                  <div class="product-about-table-name">Дно</div><img src="images/long-line.svg" alt=""/>
+                  <div class="product-about-table-value">Прямое</div>
+                </div>
+              </div>
+            </div>
+            <div class="product-about-info-podmenu" id="delivery">
+              <div class="delivery-information"> 
+                <div class="product-about-title"> <img src="images/line-title.svg" alt=""/>Наличный расчёт</div>
+                <div class="product-about-text">
+                   Вы можете оплатить покупку наличными в магазине или курьеру (при доставке товара).</div>
+                <div class="product-about-title"> <img src="images/line-title.svg" alt=""/>Банковские карты</div>
+                <div class="product-about-text">
+                   Безналичная оплата банковской картой в магазине и 
+                  при доставке. Принимаются карты следующих
+                  платёжных систем: <br/><br/>«VISA», «MasterCard», «Золотая Корона», «МИР».
+                  Безналичный расчет
+                  Доступен для физических и юридических лиц
+                  (ООО, ЧП, ИП и т.п.).
+                </div>
+              </div>
+              <div class="product-cards"> 
+                <div class="card"> 
+                  <div class="product-about-title"> <img src="images/line-title.svg" alt=""/>Доставка по Санкт-Петербургу и Ленинградской обл</div>
+                  <div class="product-about-card-title-small">Для заказов стоимостью менее 5000 ₽</div>
+                  <div class="product-about-card-content"> <img src="images/v-line.svg" alt=""/>
+                    <div class="text">В пределах КАД - 1000 ₽<br/>За пределами КАД до 50 км - 2000 ₽<br/>За пределами КАД далее 50 км - 2000 ₽ + 50 ₽ за каждый километр</div>
+                  </div>
+                  <div class="product-about-card-title-small">Для заказов стоимостью более 5000 ₽</div>
+                  <div class="product-about-card-content"> <img src="images/v-line.svg" alt=""/>
+                    <div class="text">В пределах КАД - 750 ₽<br/>За пределами КАД до 50 км - 1500 ₽<br/>За пределами КАД далее 50 км - 1500 ₽ + 50 ₽ за каждый километр</div>
+                  </div>
+                  <div class="text product-about-card-attantion">ВНИМАНИЕ! Товар доставляется только до подъезда!</div>
+                  <div class="product-about-title"> <img src="images/line-title.svg" alt=""/>Доставка крупногабаритного товара</div>
+                  <div class="text big-product-delivery">
+                    Стоимость доставки крупногабаритного товара (Бассейны, купели, спа, павильоны, надводные
+                    покрытия (ламели) согласовывается отдельно,
+                    для этого свяжитесь по телефону 
+                    с менеджером компании 8 (812) 40 000 40
+                  </div>
+                </div>
+                <div class="card"> 
+                  <div class="product-about-title"> <img src="images/line-title.svg" alt=""/>Доставка по России ‒ транспортными компаниями</div>
+                  <div class="text text-delivery">
+                    Заказы, требующие отправки в регионы России,
+                    доставляются транспортными компаниями до
+                    склада в городе получателя. Если в городе
+                    получателя нет офисов/складов ТК, по
+                    согласованию с клиентом груз отправляется 
+                    в ближайший город, в котором есть
+                    представительство ТК.<br/><br/>Вы можете рассчитать стоимость доставки до
+                    вашего города воспользовавшись калькулятором
+                    доставки на сайте одной из транспортных
+                    компаний:
+                  </div>
+                  <div class="partner-logo"> <img src="images/partner.svg" alt=""/></div>
+                </div>
+                <div class="card"> 
+                  <div class="product-about-title"> <img src="images/line-title.svg" alt=""/>Самовывоз</div>
+                  <div class="text text-delivery">
+                    Самовывоз товара производится по адресу: г.
+                    Санкт-Петербург, Витебский пр д 17 Перед
+                    получением заказа, пожалуйста, убедитесь, что
+                    он сформирован и находится в пункте выдачи
+                    заказов, предварительно позвонив по телефону
+                    8 812 40 000 40
+                  </div>
+                  <div class="card-map"> <img src="images/card-map.svg" alt=""/></div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="product-acsess"> 

@@ -938,15 +938,6 @@ input::placeholder {
 .product-about .product-about-top .product-about-top-left .product-about-small-spec .product-about-title {
   margin-bottom: 16px;
 }
-.product-about .product-about-top .product-about-top-left .product-about-small-spec .product-about-table .product-about-table-part {
-  display: grid;
-  padding: 11px 0;
-  grid-template-columns: 106px 71px auto;
-  align-items: center;
-}
-.product-about .product-about-top .product-about-top-left .product-about-small-spec .product-about-table .product-about-table-part img {
-  width: 90%;
-}
 .product-about .product-about-top .product-about-top-left .product-about-small-spec .blue-link {
   background: linear-gradient(180deg, #0044FF 35.08%, #00A3FF 101.27%);
   -webkit-background-clip: text;
@@ -999,6 +990,14 @@ input::placeholder {
   justify-content: space-between;
   padding-left: 175px;
 }
+.product-about .product-about-info .product-about-info-menu .active {
+  background: linear-gradient(180deg, #0044FF 35.08%, #00A3FF 101.27%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.product-about .product-about-info .product-about-info-menu .active .img {
+  background-image: url(images/active-line.svg);
+}
 .product-about .product-about-info .product-about-info-menu a {
   display: flex;
   flex-direction: column;
@@ -1009,18 +1008,106 @@ input::placeholder {
   width: 179px;
 }
 .product-about .product-about-info .product-about-info-menu a:nth-child(2) {
-  width: 283px;
+  width: 285px;
 }
 .product-about .product-about-info .product-about-info-menu a:nth-child(3) {
   width: 283px;
 }
-.product-about .product-about-info .product-about-info-menu a img {
+.product-about .product-about-info .product-about-info-menu a .img {
+  background-image: url(images/underline.svg);
+  background-size: 100% 100%;
   height: 7px;
   width: 283px;
   padding-top: 5px;
 }
 .product-about .product-about-info .product-about-info-content {
   padding: 77px 0 150px 190px;
+}
+.product-about .product-about-info .product-about-info-content #specification .product-about-table .product-about-table-part {
+  padding: 17px 0;
+  grid-template-columns: 175px 404px auto;
+}
+.product-about .product-about-info .product-about-info-content #specification .product-about-table .product-about-table-part img {
+  width: 90%;
+}
+.product-about #delivery .delivery-information {
+  width: 593px;
+}
+.product-about #delivery .delivery-information .product-about-title {
+  margin: 40px 0 20px -94px;
+}
+.product-about #delivery .delivery-information .product-about-title img {
+  margin-right: 17px;
+  width: 74px;
+}
+.product-about #delivery .product-cards {
+  margin-left: -10.5208333333vw;
+  width: calc(100vw - 70px);
+  margin-top: 87px;
+}
+.product-about #delivery .product-cards .card {
+  box-sizing: border-box;
+  padding: 69px 10px 56px 101px;
+  width: 30.6770833333vw;
+  min-height: 864px;
+  height: calc(864px + (1920px - 100vw) / 3);
+  margin: 0 0.625vw;
+  justify-content: flex-start;
+}
+.product-about #delivery .product-cards .card .product-about-title {
+  margin: 10px 0 10px 0;
+}
+.product-about #delivery .product-cards .card .product-about-title img {
+  margin-left: -70px;
+  width: 45px;
+  margin-right: 25px;
+}
+.product-about #delivery .product-cards .card .product-about-card-title-small {
+  font-size: 24px;
+  margin: 10px 0 15px 0;
+}
+.product-about #delivery .product-cards .card .product-about-card-content {
+  display: flex;
+  margin-bottom: 5px;
+}
+.product-about #delivery .product-cards .card .product-about-card-content img {
+  width: 11px;
+  height: 104px;
+  margin-right: 18px;
+}
+.product-about #delivery .product-cards .card .product-about-card-content .text {
+  line-height: 27px;
+}
+.product-about #delivery .product-cards .card .product-about-card-attantion {
+  padding: 20px 0;
+}
+.product-about #delivery .product-cards .card .partner-logo {
+  margin-top: 75px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.product-about #delivery .product-cards .card .partner-logo img {
+  width: 23.125vw;
+  height: 7.5520833333vw;
+}
+.product-about #delivery .product-cards .card .text-delivery {
+  padding: 10px 0;
+}
+.product-about #delivery .product-cards .card .card-map {
+  margin: 71px 0 0 -58px;
+}
+.product-about #delivery .product-cards .card .card-map img {
+  width: 26.1979166667vw;
+  height: 21.5625vw;
+}
+.product-about .product-about-table .product-about-table-part {
+  display: grid;
+  padding: 11px 0;
+  grid-template-columns: 106px 71px auto;
+  align-items: center;
+}
+.product-about .product-about-table .product-about-table-part img {
+  width: 90%;
 }
 .product-about .product-cards {
   padding: 0 0 150px 0;
