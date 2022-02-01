@@ -7,6 +7,11 @@ $(document).ready(function(){
     $('.drop-filter').hide()
     $('.product-about-info-podmenu').hide()
     $('#description').show()
+    $('.delivery-podmenu').hide()
+    $('#register-offer').show()
+    $('#first-button').css({
+        'background' : '#0044FF'
+    })
 	$('.menu-button').click(function(){
 		$('.menu-block').slideToggle(300, function(){
             $(this).show();
@@ -99,6 +104,48 @@ $(document).ready(function(){
             $('.catalog-podmenu-all').hide()
             $('.catalog-podmenu').show()
             $('.coverage').show()
+            $('.catalog-menu-part').css({
+                'background' : '#101014'
+            })
+            $(this).css({
+                'background' : '#0044FF'
+            })
+        }
+    });
+    $('.catalog-menu-part').click(function(){
+        if ($(this).text() == 'Как оформить заказ'){
+            $('.delivery-podmenu').hide()
+            $('#register-offer').show()
+            $('.catalog-menu-part').css({
+                'background' : '#101014'
+            })
+            $(this).css({
+                'background' : '#0044FF'
+            })
+        }
+        if ($(this).text() == 'Условия оплаты'){
+            $('.delivery-podmenu').hide()
+            $('#condition').show()
+            $('.catalog-menu-part').css({
+                'background' : '#101014'
+            })
+            $(this).css({
+                'background' : '#0044FF'
+            })
+        }
+        if ($(this).text() == 'Условия доставки'){
+            $('.delivery-podmenu').hide()
+            $('#delivery-condition').show()
+            $('.catalog-menu-part').css({
+                'background' : '#101014'
+            })
+            $(this).css({
+                'background' : '#0044FF'
+            })
+        }
+        if ($(this).text() == 'Гарантия на товар'){
+            $('.delivery-podmenu').hide()
+            $('#guarantee').show()
             $('.catalog-menu-part').css({
                 'background' : '#101014'
             })

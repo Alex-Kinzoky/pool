@@ -1,0 +1,258 @@
+<!DOCTYPE html >
+<html> 
+  <head>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style-mobile.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@500&amp;family=Ubuntu:wght@300;400&amp;display=swap" rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0"/>
+    <meta charset="utf-8"/>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="poolscript.js"></script>
+  </head>
+  <body> 
+    <div class="decor-header"></div>
+    <div class="menu-block">
+      <div class="menu-block-top"><a class="menu-block-profile" href="profile.html"> <img src="images/profile.svg" alt=""/>Войти</a>
+        <button class="menu-block-close"><img src="images/close.svg" alt=""/></button>
+      </div>
+      <div class="menu-block-content">
+        <div class="menu-block-list font-30"><a href="index.html">Главная</a><a href="catalog.html">Каталог</a><a href="promotion.html">Акции</a><a href="services.html">Услуги </a><a href="about-company.pug">О компании</a><a href="blog.html">Блог</a><a href="delivery.html">Доставка и оплата</a><a href="contact.html">Контакты</a></div>
+        <div class="menu-block-contact">
+          <div class="menu-block-social"><a href="#"><img src="images/social.svg" alt=""/>Instagram</a><a href="#"><img src="images/social.svg" alt=""/>Facebook</a><a href="#"><img src="images/social.svg" alt=""/>Вконтакте</a></div>
+          <div class="menu-block-contact-bottom">
+            <div class="menu-block-contact-bottom-part">sale@aquavisa.ru</div>
+            <div class="menu-block-contact-bottom-part">+7 (812) 40-000-40</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header">
+      <div class="header-nav">
+        <div class="logo"></div>
+        <button class="menu-button"><img src="images/menu.svg" alt=""/></button>
+      </div>
+    </div>
+    <div class="content">
+      <div class="nav-line">
+        <div class="nav-line-title">Доставка и оплата</div>
+        <div class="nav-line-path"><a href="index.html">Главная </a><img class="nav-line-between" src="images/nav-line-between.svg" alt=""/><a class="active" href="about-company.html">Доставка и оплата</a></div>
+      </div>
+      <div class="catalog-menu delivery-menu">
+        <div class="gradient-button">
+          <div class="catalog-menu-part" id="first-button">Как оформить заказ</div>
+        </div>
+        <div class="gradient-button">
+          <div class="catalog-menu-part">Условия оплаты</div>
+        </div>
+        <div class="gradient-button">
+          <div class="catalog-menu-part">Условия доставки</div>
+        </div>
+        <div class="gradient-button">
+          <div class="catalog-menu-part">Гарантия на товар</div>
+        </div>
+      </div>
+      <div class="delivery-podmenu" id="register-offer">
+        <div class="delivery-step-cards"> 
+          <div class="step-card"> 
+            <div class="img"> <img src="images/step-1.svg" alt=""/></div>
+            <div class="step-text">Добавьте выбранные товары в корзину</div>
+          </div>
+          <div class="step-card"> 
+            <div class="img"> <img src="images/step-2.svg" alt=""/></div>
+            <div class="step-text">Проверьте в корзине правильность заказанных позиций </div>
+          </div>
+          <div class="step-card"> 
+            <div class="img"> <img src="images/step-3.svg" alt=""/></div>
+            <div class="step-text">Нажмите кнопку «Оформить заказ» или «Быстрый заказ».</div>
+          </div>
+        </div>
+        <div class="delivery-register">
+          <div class="product-cards"> 
+            <div class="card"> 
+              <div class="product-about-title"> <img src="images/line-title.svg" alt=""/>Быстрый заказ или обычный? </div>
+              <div class="text">Функция «Быстрый заказ» позволяет покупателю не проходить всю процедуру оформления заказа самостоятельно. Вы заполняете форму, и через короткое время вам перезвонит менеджер магазина. Он уточнит все условия заказа, ответит на вопросы, касающиеся качества товара, его особенностей. А также подскажет о вариантах оплаты и доставки.<br/><br/>По результатам звонка, пользователь либо, получив уточнения, самостоятельно оформляет заказ, укомплектовав его необходимыми позициями, либо соглашается на оформление 
+                в том виде, в котором есть сейчас. Получает подтверждение на почту или на мобильный телефон и ждёт доставки.
+              </div>
+              <div class="product-about-title"> <img src="images/line-title.svg" alt=""/>Оформление заказа в стандартном режиме </div>
+              <div class="text">Если вы уверены в выборе, то можете самостоятельно оформить заказ, заполнив по этапам всю форму.</div>
+            </div>
+            <div class="card"> 
+              <div class="product-about-title"> <img src="images/line-title.svg" alt=""/>Заполняем форму</div>
+              <div class="product-about-card-title-small">Заполнение адреса</div>
+              <div class="text">
+                Выберите из списка название вашего региона и населённого пункта. Если вы не нашли свой населённый пункт в списке, выберите значение «Другое местоположение» и впишите название своего населённого пункта в графу «Город». Введите правильный индекс.</div>
+              <div class="product-about-card-title-small">Доставка</div>
+              <div class="text">В зависимости от места жительства вам предложат варианты доставки. Выберите любой удобный способ. Подробнее об условиях доставки читайте в разделе «Доставка».</div>
+              <div class="product-about-card-title-small">Оплата</div>
+              <div class="text">Выберите оптимальный способ оплаты. Подробнее о всех вариантах читайте в разделе «Оплата».</div>
+              <div class="product-about-card-title-small">Покупатель</div>
+              <div class="text">Введите данные о себе: ФИО, адрес доставки, номер телефона. В поле «Комментарии к заказу» введите сведения, которые могут пригодиться курьеру, например: подъезды в доме считаются справа налево</div>
+            </div>
+            <div class="card"> 
+              <div class="product-about-title"> <img src="images/line-title.svg" alt=""/>Оформление заказа</div>
+              <div class="text">Проверьте правильность ввода информации: позиции заказа, выбор местоположения, данные о покупателе. Нажмите кнопку «Оформить заказ».<br/><br/>Наш сервис запоминает данные о пользователе, информацию о заказе и в следующий раз предложит вам повторить к вводу данные предыдущего заказа. Если условия вам 
+                не подходят, выбирайте другие варианты.
+              </div>
+              <div class="finally"><img src="images/finally.svg" alt=""/></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="delivery-podmenu" id="condition">
+        <div class="condition-text">Интернет-магазин AquaVisa работает как с физическими, так и с юридическими лицами, осуществляя продажу оборудования и химии для бассейнов оптом и в розницу. Мы предлагаем наличный и безналичный расчет, принимаем банковские карты популярных платежных систем: Visa, Mastercard, МИР.</div>
+        <div class="delivery-register condition">
+          <div class="product-cards"> 
+            <div class="card"> 
+              <div class="product-about-title"> <img src="images/line-title.svg" alt=""/>Оплата для физических лиц   </div>
+              <div class="text"> <img class="point" src="images/point.svg" alt=""/>В Санкт-Петербурге и Ленинградской области – наличными при получении товара.</div>
+              <div class="text"> <img class="point" src="images/point.svg" alt=""/>В других регионах России – оплата по выставленному счету в любом удобном банке; денежный перевод на карту Сбербанка РФ</div>
+            </div>
+            <div class="card"> 
+              <div class="product-about-title"> <img src="images/line-title.svg" alt=""/>Оплата для юридических лиц </div>
+              <div class="text"> <img class="point" src="images/point.svg" alt=""/>В Санкт-Петербурге и Ленинградской области – по безналичному расчету или наличными при оформлении заказа.</div>
+              <div class="text"> <img class="point" src="images/point.svg" alt=""/>В других регионах России – по безналичному расчету.<br/><br/>*На общих условиях отгрузка товаров проводится при проведении 100 % оплаты.</div>
+            </div>
+            <div class="card"> 
+              <div class="product-about-title"> <img src="images/line-title.svg" alt=""/>Бонусы и скидки</div>
+              <div class="text">
+                 При регистрации на сайте AquaVisa мы дарим фиксированную скидку в размере 3 %. Кроме того, физические лица могут получить индивидуальную скидку в зависимости от суммы заказа. Для оптовых покупателей также действует система скидок.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="delivery-podmenu" id="delivery-condition">
+        <div class="condition-text">Мы доставляем оборудование и химию для бассейнов по Санкт-Петербургу и другим городам России.<br/><br/>Доставка по Санкт-Петербургу осуществляется в течение 1-5 рабочих дней после оформления заказа при условии наличия товара на складе. Доставка производится ежедневно, включая выходные и праздничные дни (по предварительной договоренности), с 10:00 до 22:00.</div>
+        <div class="delivery-register">
+          <div class="product-cards"> 
+            <div class="card"> 
+              <div class="product-about-title"> <img src="images/line-title.svg" alt=""/>Доставка по Санкт-Петербургу и Ленинградской обл</div>
+              <div class="product-about-card-title-small">Для заказов стоимостью менее 5000 ₽</div>
+              <div class="product-about-card-content"> <img src="images/v-line.svg" alt=""/>
+                <div class="text">В пределах КАД - 1000 ₽<br/>За пределами КАД до 50 км - 2000 ₽<br/>За пределами КАД далее 50 км - 2000 ₽ + 50 ₽ за каждый километр</div>
+              </div>
+              <div class="product-about-card-title-small">Для заказов стоимостью более 5000 ₽</div>
+              <div class="product-about-card-content"> <img src="images/v-line.svg" alt=""/>
+                <div class="text">В пределах КАД - 750 ₽<br/>За пределами КАД до 50 км - 1500 ₽<br/>За пределами КАД далее 50 км - 1500 ₽ + 50 ₽ за каждый километр</div>
+              </div>
+              <div class="text product-about-card-attantion">ВНИМАНИЕ! Товар доставляется только до подъезда!</div>
+              <div class="product-about-title"> <img src="images/line-title.svg" alt=""/>Доставка крупногабаритного товара</div>
+              <div class="text big-product-delivery">
+                Стоимость доставки крупногабаритного товара (Бассейны, купели, спа, павильоны, надводные
+                покрытия (ламели) согласовывается отдельно,
+                для этого свяжитесь по телефону 
+                с менеджером компании 8 (812) 40 000 40
+              </div>
+            </div>
+            <div class="card"> 
+              <div class="product-about-title"> <img src="images/line-title.svg" alt=""/>Доставка по России ‒ транспортными компаниями</div>
+              <div class="text text-delivery">
+                Заказы, требующие отправки в регионы России,
+                доставляются транспортными компаниями до
+                склада в городе получателя. Если в городе
+                получателя нет офисов/складов ТК, по
+                согласованию с клиентом груз отправляется 
+                в ближайший город, в котором есть
+                представительство ТК.<br/><br/>Вы можете рассчитать стоимость доставки до
+                вашего города воспользовавшись калькулятором
+                доставки на сайте одной из транспортных
+                компаний:
+              </div>
+              <div class="partner-logo"> <img src="images/partner.svg" alt=""/></div>
+            </div>
+            <div class="card"> 
+              <div class="product-about-title"> <img src="images/line-title.svg" alt=""/>Самовывоз</div>
+              <div class="text text-delivery">
+                Самовывоз товара производится по адресу: г.
+                Санкт-Петербург, Витебский пр д 17 Перед
+                получением заказа, пожалуйста, убедитесь, что
+                он сформирован и находится в пункте выдачи
+                заказов, предварительно позвонив по телефону
+                8 812 40 000 40
+              </div>
+              <div class="card-map"> <img src="images/card-map.svg" alt=""/></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="delivery-podmenu" id="guarantee">
+        <div class="condition-text">Гарантийный период – это срок, во время которого клиент, обнаружив недостаток товара имеет право потребовать от продавца или изготовителя принять меры по устранению дефекта. Продавец должен устранить недостатки, если не будет доказано, что они возникли вследствие нарушений покупателем правил эксплуатации.</div>
+        <div class="delivery-register">
+          <div class="product-cards"> 
+            <div class="card"> 
+              <div class="product-about-title"> <img src="images/line-title.svg" alt=""/>С какого момента начинается гарантия?</div>
+              <div class="product-about-card-content"> <img src="images/big-v-line.svg" alt=""/>
+                <div class="text">С момента передачи товара потребителю, если в договоре нет уточнения<br/>Если нет возможности установить день покупки, то гарантия идёт с момента изготовления<br/>На сезонные товары гарантия идёт с момента начала сезона<br/>При заказе товара из интернет-магазина гарантия начинается со дня доставки</div>
+              </div>
+              <div class="product-about-card-title-small">Обслуживание по гарантии включает в себя:</div>
+              <div class="product-about-card-content"> <img src="images/v-line.svg" alt=""/>
+                <div class="text">
+                  Устранение недостатков товара в сертифицированных сервисных центрах<br/>Обмен на аналогичный товар без доплаты<br/>Обмен на похожий товар с доплатой<br/>Возврат товара и перечисление денежных средств на счёт покупателя</div>
+              </div>
+            </div>
+            <div class="card"> 
+              <div class="product-about-title"> <img src="images/line-title.svg" alt=""/>Правила обмена и возврата товара</div>
+              <div class="product-about-card-title-small">Обмен и возврат продукции надлежащего качества</div>
+              <div class="text">Продавец гарантирует, что покупатель в течение 7 дней с момента приобретения товара может отказаться от товара надлежащего качества, если:</div>
+              <div class="product-about-card-content"> <img src="images/v-line.svg" alt=""/>
+                <div class="text">
+                  Товар не поступал в эксплуатацию и имеет товарный вид, находится в упаковке со всеми ярлыками, а также есть документы на приобретение товара<br/>Товар не входит в перечень продуктов надлежащего качества, не подлежащих возврату и обмену.</div>
+              </div>
+              <div class="text">Покупатель имеет право обменять товар надлежащего качество на другое торговое предложение этого товара или другой товар, идентичный по стоимости или на иной товар с доплатой или возвратом разницы в цене.</div>
+              <div class="product-about-card-title-small">Обмен и возврат продукции ненадлежащего качества</div>
+              <div class="text">Если покупатель обнаружил недостатки товара после его приобретения, то он может потребовать замену у продавца. Замена должна быть произведена в течение 7 дней со дня предъявления требования. В случае, если будет назначена экспертиза на соответствие товара указанным нормам, то обмен должен быть произведён в течение 20 дней.</div><br/>
+              <div class="text">Технически сложные товары ненадлежащего качества заменяются товарами той же марки или на аналогичный товар другой марки с перерасчётом стоимости. Возврат производится путем аннулирования договора купли-продажи и возврата суммы в размере стоимости товара.</div>
+            </div>
+            <div class="card"> 
+              <div class="product-about-title"> <img src="images/line-title.svg" alt=""/>Возврат денежных средств</div>
+              <div class="text">Срок возврата денежных средств зависит от вида оплаты, который изначально выбрал покупатель.</div><br/>
+              <div class="text">При наличном расчете возврат денежных средств осуществляется на кассе не позднее через через 10 дней после предъявления покупателем требования о возврате.</div><br/>
+              <div class="text">Зачисление стоимости товара на карту клиента, если был использован безналичный расчёт, происходит сразу после получения требования от покупателя.</div><br/>
+              <div class="text">При использовании электронных платёжных систем, возврат осуществляется на электронный счёт в течение 10 календарных дней.</div>
+              <div class="return"><img src="images/return.svg" alt=""/></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="help">
+      <div class="light-point"></div>
+      <div class="help-decor"></div>
+      <div class="label">Остались вопросы?</div>
+      <div class="content">
+        <div class="label-text">Получите помощь специалиста</div>
+        <div class="card card-help"><img src="images/card.svg" alt=""/>
+          <div class="card-text">Данные успешно отправлены, спасибо!</div><a class="help-button return-site" href="index.html">Вернуться на сайт</a>
+        </div>
+        <form class="help-form" action="" method="post">
+          <div class="input-contact">
+            <div class="input">
+              <input type="text" name="name" placeholder="Ваше имя"/>
+              <div class="hr"></div>
+            </div>
+            <div class="input">
+              <input type="tel" name="phone" placeholder="Телефон"/>
+              <div class="hr"></div>
+            </div>
+          </div>
+          <div class="help-text">
+            Нажимая на кнопку «Отправить заявку», Вы соглашаетесь с условиями на передачу
+            персональных данных
+          </div>
+          <input class="help-button" type="submit" value="Отправить заявку"/>
+        </form>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="content">
+        <div class="copyright">2021 © AquaVisa</div>
+        <div class="right-footer"><a class="offert" href="#">Договор оферты</a><a class="politic" href="#">Политика конфиденциальности</a></div>
+      </div>
+    </div>
+    <button class="arrow-up-button">
+      <div class="arrow-up-text">наверх</div>
+      <div class="arrow-up-arrow"></div>
+    </button>
+  </body>
+</html>

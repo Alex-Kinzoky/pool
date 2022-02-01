@@ -1,0 +1,109 @@
+doctype html 
+html 
+    include ./components/head.pug 
+    body 
+        .decor-header
+        include ./components/header.pug 
+        .content
+            .nav-line
+                .nav-line-title О компании
+                .nav-line-path
+                    a(href="index.html") Главная 
+                    img(src="images/nav-line-between.svg", alt="" class="nav-line-between")
+                    a(href="about-company.html" class="active") О компании
+            .about-us
+                .about-us-1
+                    .about-us-number
+                    .about-us-1-content
+                        .about-us-1-content-text
+                            | Компания AquaVisa занимается поставкой оборудования для 
+                            | бассейнов, снабжением, оптовой продажей строительных материалов 
+                            | и специального оснащения для бассейнов, бань, хаммамов и спа-
+                            | комплексов по всей России и СНГ. Мы предоставляем широкий 
+                            | ассортимент ведущих поставщиков и комплексные 
+                            | услуги профессиональных консультантов.
+                        .about-us-1-content-images
+                            img(src="images/01-1.png", alt="")
+                            img(src="images/01-2.png", alt="")
+                            img(src="images/01-3.png", alt="")
+                    .about-us-1-decor
+                .about-us-2
+                    .about-us-number
+                    .about-us-2-content
+                        .about-us-item
+                            .about-us-item-icon
+                                img(src="images/02-1.svg", alt="")
+                            .about-us-item-h Комплексный подход
+                            .about-us-item-text
+                                | Доставка оборудования и химии, 
+                                | техническое сопровождение, 
+                                | сервисное обслуживание 
+                                | бассейнов и оборудования для 
+                                | них, консультационные услуги 
+                                | (строительство бассейнов; подбор 
+                                | оборудования; эксплуатация).
+                        .about-us-item
+                            .about-us-item-icon
+                                img(src="images/02-2.svg", alt="")
+                            .about-us-item-h Высокий профессионализм
+                            .about-us-item-text
+                                | Наш опыт и знания позволяют 
+                                | оценивать все аспекты 
+                                | и особенности каждого объекта, 
+                                | принимать оптимальные решения 
+                                | по подбору и доставке материалов, 
+                                | исходя из его масштабов 
+                                | и функциональных особенностей.
+                        .about-us-item
+                            .about-us-item-icon
+                                img(src="images/02-3.svg", alt="")
+                            .about-us-item-h Отличное соотношение цены и качества
+                            .about-us-item-text
+                                | Мы прекрасно ориентируемся 
+                                | в рынке и готовы предоставлять 
+                                | скидки как физическим лицам, 
+                                | так и оптовым покупателям.
+                        .about-us-item
+                            .about-us-item-icon
+                                img(src="images/02-4.svg", alt="")
+                            .about-us-item-h Широкий ассортимент
+                            .about-us-item-text
+                                | Мы работаем со всемирно 
+                                | известными производителями 
+                                | оборудования для бассейнов:
+                .about-us-3
+                    .about-us-number
+                    .about-us-3-content
+                        .comment.comment-bot
+                        .comment
+                            .comment-top 
+                                .star
+                                    img(src="images/star-comment.svg", alt="") 
+                                .comment-name Максим Кириллчук
+                                .comment-more 
+                                    img(src="images/arrow-right.svg", alt="")
+                            .comment-text Обращались первый раз, по рекомендации друга. Достойный ассортимент, качественное оборудование для бассейнов. 
+                                | Брал Насос AstralPool Victoria Plus — всё понравилось, работает и не подводит! 
+        .help
+            .light-point
+            .help-decor
+            .label Остались вопросы?
+            .content
+                .label-text Получите помощь специалиста
+                .card.card-help
+                    img(src="images/card.svg", alt="")
+                    .card-text Данные успешно отправлены, спасибо!
+                    a.help-button.return-site(href="index.html") Вернуться на сайт
+                form.help-form(action="", method="post")
+                    .input-contact
+                        .input
+                            input(type="text", name="name", placeholder="Ваше имя")
+                            .hr
+                        .input
+                            input(type="tel", name="phone", placeholder="Телефон")
+                            .hr
+                    .help-text
+                        | Нажимая на кнопку «Отправить заявку», Вы соглашаетесь с условиями на передачу
+                        | персональных данных
+                    input.help-button(type="submit", value="Отправить заявку")
+        include ./components/footer.pug

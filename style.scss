@@ -409,6 +409,7 @@ body {
   }
   
   .help {
+      margin-bottom: calc(100vw * (176 / 1920));
     .card-text {
       font-size: 40px;
       margin: -50px 0 50px 0;
@@ -1066,6 +1067,7 @@ body {
             margin-left: calc(100vw * (-202 / 1920));
             width: calc(100vw - 70px);
             margin-top: 87px;
+            padding: 0;
             .card{
                 box-sizing: border-box;
                 padding: 69px 10px 56px 101px;
@@ -1148,6 +1150,7 @@ body {
             box-sizing: border-box;
             width: calc(100vw * (337 /1920));
             height: calc(100vw * (452 / 1920));
+            min-height: 0;
             padding: 38px 28px;
             margin: calc(100vw * (17 /1920));
           }
@@ -1398,7 +1401,200 @@ body {
       justify-content: center;
       margin-bottom: calc(100vw * (200 / 1920));
   }
-  
+  .blog-page {
+      display: flex;
+      padding: 50px 50px 150px 0;
+      justify-content: space-between;
+      .blog-page-left{
+          .img{
+              margin-left: -50px;
+              width: calc(100vw * (625 / 1920));
+          }
+          .blue-link{
+              padding-top: calc(100vw * (120 / 1920));
+              font-size: 30px;
+              display: block;
+              img{
+                  width: 106px;
+                  margin-right: calc(100vw * (47 / 1920));
+                  transform: rotate(180deg);
+              }
+          }
+      }
+      .blog-page-text{
+          width: calc(100vw * (1053 / 1920));
+      }
+  }
+  .about-us-3{
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: calc(100vw * (150 / 1920));
+    .about-us-number{
+        background-image: url(images/03.svg);
+        background-size: 100% 100%;
+        width: calc(100vw * (520 / 1920));
+        height: calc(100vw * (500 / 1920));
+    }
+  }
+  .comment{
+      background-image: url(images/comments.svg);
+      background-size: 100% 100%;
+      width: calc(100vw * (948 / 1920));
+      height: calc(100vw * (400 / 1920));
+      position: relative;
+      .comment-top {
+          display: flex;
+          padding: calc(100vw * (73 / 1920)) calc(100vw * (48 / 1920)) calc(100vw * (39 / 1920)) calc(100vw * (26 / 1920));
+          align-items: center;
+          .comment-name{
+              margin-left: 26px;
+              font-size: 30px;
+              font-weight: 400;
+          }
+          .comment-more {
+              position: absolute;
+              right: calc(100vw * (48 / 1920));
+              top: calc(100vw * (73 / 1920));
+          }
+      }
+      .comment-text{
+          padding: 0 calc(100vw * (86 / 1920)) 0 calc(100vw * (143 / 1920));
+      }
+  }
+  .comment-bot{
+      position: absolute;
+      margin: calc(100vw * (54 /1920)) calc(100vw * (66 / 1920));
+  }
+  .delivery-menu{
+    .catalog-menu-part{
+        box-sizing: border-box;
+        width: calc(100vw * (360 / 1920));
+        display: flex;
+        justify-content: center;
+    }
+  }
+  .delivery-step-cards{
+      padding: calc(100vw * (185 / 1920)) 0;
+      display: flex;
+      width: 90%;
+      justify-content: space-between;
+      .step-card {
+          width: calc(100vw * (442 / 1920));
+          height: calc(100vw * (300 / 1920));
+          .img{
+              height: 168px;
+              margin-bottom: 32px;
+              display: flex;
+              justify-content: center;
+          }
+      }
+  }
+  .delivery-register{
+    .product-cards {
+        width: calc(100vw - 70px);
+        margin-top: 87px;
+        padding: 0;
+        .card{
+            box-sizing: border-box;
+            padding: 69px 26px 56px 101px;
+            width: calc(100vw * (589 / 1920));
+            min-height: 864px;
+            height: calc(864px + ((1920px - 100vw)/3));
+            margin: 0 calc(100vw * (12 / 1920));
+            justify-content: flex-start;
+            .product-about-title {
+                margin: 10px 0 10px 0;
+                font-weight: 400;
+                font-size: 30px;
+                img{
+                    margin-left: -70px;
+                    width: 45px;
+                    margin-right: 25px;
+                }
+            }
+            .product-about-card-title-small{
+                font-size: 24px;
+                margin: 10px 0 15px 0;
+            }
+            .product-about-card-content {
+                display: flex;
+                margin-bottom: 5px;
+                img{
+                    width: 11px;
+                    height: 100%;
+                    margin-right: 18px;
+                }
+                .text{
+                    line-height: 27px;
+                }
+            }
+            .product-about-card-attantion{
+                padding: 20px 0;
+            }
+            .partner-logo {
+                margin-top: 75px;
+                display: flex;
+                flex-wrap: wrap;
+                img{
+                    width: calc(100vw * (444 / 1920));
+                    height: calc(100vw * (145 / 1920));
+                }
+                
+            }
+            .text-delivery{
+                padding: 10px 0;
+            }
+            .card-map{
+                margin: 71px 0 0 -58px;
+                img{
+                    width: calc(100vw * (503 / 1920));
+                    height: calc(100vw * (414 / 1920));
+                }
+                
+            }
+            .finally{
+                margin: auto;
+                margin-left: -85px;
+                width: calc(100vw * (544 / 1920));
+            }
+            .return{
+                margin: auto;
+                img{
+                    margin-left: -55px;
+                }
+            }
+        }
+    }
+  }
+  .condition{
+    .product-cards{
+        .card{
+            min-height: 424px;
+            height: calc(424px + ((1920px - 100vw)/3));
+            .point{
+                margin-left: -32px;
+                margin-right: 23px;
+            }
+        }
+    }
+  }
+  .condition-text{
+      width: 1090px;
+      margin: 97px 0;
+  }
+  .delivery-podmenu{
+      margin-bottom: calc(100vw * (270 / 1920));
+  }
+  #guarantee{
+      .product-cards{
+        .card{
+            min-height: 1126px;
+            height: calc(1126px + ((1920px - 100vw)/3));
+          }
+      }
+      
+  }
   @media (max-width: 1748px) {
     .header-content-text-big {
       font-size: 70px;
