@@ -1,0 +1,113 @@
+doctype html 
+html 
+    include ./components/head.pug 
+    body 
+        include ./components/header.pug 
+        .big-point-light
+        .image-maintenance
+        .content
+            .nav-line
+                .nav-line-title Услуги
+                .nav-line-path
+                    a(href="index.html") Главная 
+                    img(src="images/nav-line-between.svg", alt="" class="nav-line-between")
+                    a(href="product.html" class="active") Услуги
+            .maintenance-header
+                .maintenance-title Сервисное обслуживание бассейнов
+                .maintenance-text Выполняем сервисное техническое обслуживание любых бассейнов –
+                    | частных, коммерческих, общественных. Выезжаем как на единоразовые
+                    | профилактические и срочные работы, так и заключаем договоры 
+                    | на абонентское обслуживание
+                a(href="#" class='blue-border-button') Заказать услугу
+            .map-services 
+                .maintenance-decor
+                .one-line 
+                    .one-line-title Aquavisa предоставляет услуги по обслуживанию бассейнов
+                    img(src="images/show-all.svg", alt="")
+                    .one-line-text Консультирование
+                    img(src="images/show-all.svg", alt="")
+                    .one-line-text Диагностика
+                    img(src="images/show-all.svg", alt="")
+                    .one-line-text Уход за водой
+                .one-line.down
+                    img(src="images/show-all.svg", alt="")
+                .one-line.back
+                    .one-line-text Обслуживание оборудования
+                    img(src="images/show-all.svg", alt="")
+                    .one-line-text Консервация бассейна
+            .maintenance-info 
+                .maintenance-info-title Что включает в себя годовое сервисное обслуживание?
+                .maintenance-info-text Вы можете заказать как разовый визит специалиста, так и годовое
+                    | обслуживание. Это позволит вам больше не тратить время на поиск
+                    | решения той или иной проблемы, случившейся с вашим бассейном.
+                    | Более того нашим клиентам предоставляется постоянная скидка на
+                    | средства по уходу за водой, средства для очистки и аксессуары для
+                    | бассейна.
+            .maintenance-cards 
+                .wave-card
+                    img(src="images/1.svg", alt="")
+                    .text Выезд специалиста на объект 
+                        | в сезон эксплуатации бассейна
+                .wave-card
+                    img(src="images/2.svg", alt="")
+                    .text Профилактический осмотр оборудования и проведение сервисных работ
+                .wave-card
+                    img(src="images/3.svg", alt="")
+                    .text Определение химического состава воды с помощью тестеров с последующим регулированием уровня рН
+                .wave-card
+                    img(src="images/4.svg", alt="")
+                    .text Дезинфекция воды и промывка фильтров
+                .wave-card
+                    img(src="images/5.svg", alt="")
+                    .text Калибровка электродов станции дозации
+                .wave-card
+                    img(src="images/6.svg", alt="")
+                    .text Проверка оборудования фильтрации воды, нагревательных приборов
+                .wave-card
+                    img(src="images/7.svg", alt="")
+                    .text Контроль температуры воды
+                .wave-card
+                    img(src="images/8.svg", alt="")
+                    .text Консультации по вопросам эксплуатации оборудования
+                .wave-card
+                    img(src="images/9.svg", alt="")
+                    .text К алибровка электродов станции дозирования
+                .wave-card
+                    img(src="images/10.svg", alt="")
+                    .text Замена фильтрующего элемента
+                .wave-card
+                    img(src="images/11.svg", alt="")
+                    .text Консервация и расконсервация бассейна
+            .help.maintenance-help
+              .help-decor
+              .label Оформить заявку
+              .content
+                .label-text Оформите заявку на сайте, мы свяжемся с вами в ближайшее время
+                    br
+                    | и ответим на все интересующие вопросы.
+                .card.card-help
+                  img(src="images/card.svg", alt="")
+                  .card-text Данные успешно отправлены, спасибо!
+                  a.help-button.return-site(href="index.html") Вернуться на сайт
+                form.help-form(action="", method="post")
+                  .input-contact
+                    .input
+                      input(type="text", name="name", placeholder="Ваше имя")
+                      .hr
+                    .input
+                      input(type="tel", name="phone", placeholder="Телефон")
+                      .hr
+                  .input-contact
+                    .input
+                      input(type="email", name="email", placeholder="Email")
+                      .hr
+                    .input
+                      select(name="service" class='select-service')
+                        option(value="hide") Услуга
+                        option(value="n1") Пример
+                      .hr
+                  .help-text
+                    | Нажимая на кнопку «Отправить заявку», Вы соглашаетесь с условиями на передачу
+                    | персональных данных
+                  input.help-button(type="submit", value="Отправить заявку")
+        include ./components/footer.pug

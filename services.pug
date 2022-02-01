@@ -1,0 +1,43 @@
+doctype html 
+html 
+    include ./components/head.pug 
+    body 
+        .decor-header
+        include ./components/header.pug 
+        .content
+            .nav-line
+                .nav-line-title Услуги
+                .nav-line-path
+                    a(href="index.html") Главная 
+                    img(src="images/nav-line-between.svg", alt="" class="nav-line-between")
+                    a(href="product.html" class="active") Услуги
+            .services-list
+                a(href="maintenance.html" class="card")
+                    .product-image 
+                        img(src="images/services1.svg", alt="")
+                    .font-30 Сервисное обслуживание бассейнов
+                a(href="maintenance.html" class="card")
+                    .product-image 
+                        img(src="images/services2.svg", alt="")
+                    .font-30 Профессиональный монтаж
+                        br
+                        | оборудования
+                a(href="maintenance.html" class="card")
+                    .product-image 
+                        img(src="images/services3.svg", alt="")
+                    .font-30 Очистка бассейна
+                a(href="maintenance.html" class="card")
+                    .product-image 
+                        img(src="images/services4.svg", alt="")
+                    .font-30 Консервация и расконсервация
+                        br
+                        | бассейна
+                a(href="maintenance.html" class="card")
+                    .product-image 
+                        img(src="images/services5.svg", alt="")
+                    .font-30 Ремонт бассейнов
+                a(href="maintenance.html" class="card")
+                    .product-image 
+                        img(src="images/services6.svg", alt="")
+                    .font-30 Строительство бассейнов
+        include ./components/footer.pug

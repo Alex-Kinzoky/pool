@@ -1,0 +1,43 @@
+doctype html 
+html 
+    include ./components/head.pug 
+    body 
+        .decor-header
+        include ./components/header.pug 
+        .content
+            .nav-line
+                .nav-line-title Услуги
+                .nav-line-path
+                    a(href="index.html") Главная 
+                    img(src="images/nav-line-between.svg", alt="" class="nav-line-between")
+                    a(href="product.html" class="active") Услуги
+            .blog-cards 
+                .card 
+                    .blog-category СОВЕТЫ ПОКУПАТЕЛЯМ
+                    .blog-title Консервация композитного бассейна: как подготовиться к зиме
+                    a(href="#" class="blue-link") Подробнее
+                .card 
+                    .blog-category СОВЕТЫ ПОКУПАТЕЛЯМ
+                    .blog-title Использование композитного бассейна в зимнее время
+                    a(href="#" class="blue-link") Подробнее
+                .card 
+                    .blog-category ОБЗОРЫ ТОВАРОВ
+                    .blog-title Устаете? 
+                        br
+                        | Вам нужна СПА!
+                    a(href="#" class="blue-link") Подробнее
+                .card 
+                    .blog-category ОБЗОРЫ ТОВАРОВ
+                    .blog-title Зачем нужны Ламели?
+                    a(href="#" class="blue-link") Подробнее
+                .card 
+                    .blog-category ОБЗОРЫ ТОВАРОВ
+                    .blog-title Освещение для бассейнов
+                    a(href="#" class="blue-link") Подробнее
+                .card 
+                    .blog-category ОБЗОРЫ ТОВАРОВ
+                    .blog-title Как ухаживать за бассейном?
+                    a(href="#" class="blue-link") Подробнее
+            .blog-button
+                a(href="#" class='blue-border-button') Показать ещё
+        include ./components/footer.pug
