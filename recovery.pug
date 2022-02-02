@@ -1,0 +1,29 @@
+doctype html 
+html 
+    include ./components/head.pug 
+    body 
+        .decor-header
+        include ./components/header.pug 
+        .content
+            .nav-line
+                .nav-line-title Личный кабинет
+                .nav-line-path
+                    a(href="index.html") Главная 
+                    img(src="images/nav-line-between.svg", alt="" class="nav-line-between")
+                    a(href="index.html") Личный кабинет
+                    img(src="images/nav-line-between.svg", alt="" class="nav-line-between")
+                    a(href="about-company.html" class="active") Восстановление пароля
+        .help.profile-login
+            .light-point
+            .profile-label Мы отправим письмо с сылкой для восстановления пароля 
+            .content
+                form.help-form(action="", method="post")
+                    .input-contact.profile-form
+                        .input
+                            input(type="text", name="login", placeholder="Логин или email*")
+                            .hr
+                    .help-text
+                        | Нажимая на кнопку «Восстановить пароль», Вы соглашаетесь с условиями на передачу
+                        | персональных данных
+                    input.help-button(type="submit", value="Восстановить пароль")
+        include ./components/footer.pug

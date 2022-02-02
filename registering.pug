@@ -1,0 +1,39 @@
+doctype html 
+html 
+    include ./components/head.pug 
+    body 
+        .decor-header
+        include ./components/header.pug 
+        .content
+            .nav-line
+                .nav-line-title Личный кабинет
+                .nav-line-path
+                    a(href="index.html") Главная 
+                    img(src="images/nav-line-between.svg", alt="" class="nav-line-between")
+                    a(href="about-company.html" class="active") Личный кабинет
+        .help.profile-login
+            .light-point
+            .light-point.two
+            .content
+                form.help-form(action="", method="post")
+                    .input-contact.profile-form
+                        .input
+                            input(type="text", name="user-name", placeholder="ФИО*")
+                            .hr
+                        .input
+                            input(type="email", name="email", placeholder="Email*")
+                            .hr
+                        .input
+                            input(type="tel", name="phone", placeholder="Телефон*")
+                            .hr
+                        .input
+                            input(type="password", name="password", placeholder="Пароль*")
+                            .hr
+                        .input
+                            input(type="password", name="repeat-password", placeholder="Повторить пароль*")
+                            .hr
+                    .help-text
+                        | Нажимая на кнопку «Зарегистрироваться», Вы соглашаетесь с условиями на передачу
+                        | персональных данных
+                    input.help-button(type="submit", value="Зарегистрироваться")
+        include ./components/footer.pug

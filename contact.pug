@@ -1,0 +1,23 @@
+doctype html 
+html 
+    include ./components/head.pug 
+    body 
+        .decor-header
+        include ./components/header.pug 
+        .content
+            .nav-line
+                .nav-line-title Контакты
+                .nav-line-path
+                    a(href="index.html") Главная 
+                    img(src="images/nav-line-between.svg", alt="" class="nav-line-between")
+                    a(href="about-company.html" class="active") Контакты
+        .contact
+            .map
+                img(src="images/map.png", alt="")
+            .contact-content
+                .contact-text
+                    .contact-text-part Санкт-Петербург, Витебский пр., д. 17
+                    .contact-text-part sale@aquavisa.ru
+                    .contact-text-part +7 (812) 40-000-40
+            .contact-decor
+        include ./components/footer.pug

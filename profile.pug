@@ -1,0 +1,32 @@
+doctype html 
+html 
+    include ./components/head.pug 
+    body 
+        .decor-header
+        include ./components/header.pug 
+        .content
+            .nav-line
+                .nav-line-title Личный кабинет
+                .nav-line-path
+                    a(href="index.html") Главная 
+                    img(src="images/nav-line-between.svg", alt="" class="nav-line-between")
+                    a(href="about-company.html" class="active") Личный кабинет
+        .help.profile-login
+            .light-point
+            .content
+                form.help-form(action="", method="post")
+                    .input-contact.profile-form
+                        .input
+                            input(type="login", name="login", placeholder="Логин*")
+                            .hr
+                        .input
+                            input(type="password", name="password", placeholder="Пароль*")
+                            .hr
+                    .form-bottom 
+                        a.blue-link(href="recovery.html") Забыли пароль?
+                        a.blue-link(href="registering.html") Зарегистрироваться
+                    .help-text
+                        | Нажимая на кнопку «Войти», Вы соглашаетесь с условиями на передачу
+                        | персональных данных
+                    a(href="myprofile.html", class="help-button return-profile") Войти
+        include ./components/footer.pug

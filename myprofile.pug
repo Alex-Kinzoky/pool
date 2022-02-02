@@ -1,0 +1,175 @@
+doctype html 
+html 
+    include ./components/head.pug 
+    body 
+        .decor-header
+        include ./components/header.pug 
+        .content
+            .nav-line
+                .nav-line-title Личный кабинет
+                .nav-line-path
+                    a(href="index.html") Главная 
+                    img(src="images/nav-line-between.svg", alt="" class="nav-line-between")
+                    a(href="about-company.html" class="active") Личный кабинет
+            .catalog-menu.menu-profile
+                .gradient-button
+                    .catalog-menu-part#first-button Личные данные
+                .gradient-button
+                    .catalog-menu-part Сменить пароль
+                .gradient-button
+                    .catalog-menu-part Текущие заказы
+                .gradient-button
+                    .catalog-menu-part История заказов
+                .gradient-button
+                    .catalog-menu-part Корзина
+                .gradient-button
+                    .catalog-menu-part 
+                        | Выйти
+                        img(src="images/arrow-right.svg", alt="")
+                .gradient-button
+                    .catalog-menu-part Избранное
+                .gradient-button
+                    .catalog-menu-part Сравнение
+        .help.profile-login#personal-data.profile-podmenu
+            .light-point
+            .content
+                form.help-form(action="", method="post")
+                    .input-contact.profile-form
+                        .input
+                            input(type="text", name="user-name", placeholder="ФИО*")
+                            .hr
+                        .input
+                            input(type="email", name="email", placeholder="Email*")
+                            .hr
+                        .input
+                            input(type="tel", name="phone", placeholder="Телефон*")
+                            .hr
+                    .help-text
+                        | Нажимая на кнопку «Сохранить изменения», Вы соглашаетесь с условиями на передачу
+                        | персональных данных
+                    a(href="myprofile.html", class="help-button") Сохранить изменения
+        .help.profile-login#change-password.profile-podmenu
+            .light-point
+            .content
+                form.help-form(action="", method="post")
+                    .input-contact.profile-form
+                        .input
+                            input(type="password", name="password", placeholder="Новый пароль*")
+                            .hr
+                        .input
+                            input(type="password", name="repeat-password", placeholder="Повторить пароль*")
+                            .hr
+                    a(href="myprofile.html", class="help-button") Изменить пароль
+        #now-offers.profile-offers.profile-podmenu
+            .blog-cards 
+                .card 
+                    .blog-category Заказ 1
+                    .blog-title Композитный бассейн
+                        br
+                        | Оборудование
+                    a(href="#" class="blue-link") Подробнее
+                .card 
+                    .blog-category Заказ 2
+                    .blog-title Химия для бассейна
+                    a(href="#" class="blue-link") Подробнее
+        #history-offers.profile-offers.profile-podmenu
+            .blog-cards 
+                .card 
+                    .blog-category Заказ 1
+                    .blog-title Композитный бассейн
+                        br
+                        | Оборудование
+                    a(href="#" class="blue-link") Подробнее
+                .card 
+                    .blog-category Заказ 2
+                    .blog-title Химия для бассейна
+                    a(href="#" class="blue-link") Подробнее
+        #profile-buscket.profile-podmenu
+            .no-product
+                .buscket-img 
+                    img(src="images/big-buscket.svg", alt="")
+                .text-no-product Ваша корзина пуста
+                a(href="#" class='blue-border-button') Перейти в каталог
+        #favourites.content.profile-podmenu
+            .product-line
+                .product-cards
+                    - for (var x = 0; x < 5; x++)
+                        .card 
+                            .product-image
+                                img(src="images/catalog-pool.png", alt="")
+                            .price 476 000 ₽
+                            a(class='.product-title' href='product-page.html') Композитный бассейн ROYAL 9037 (с ППУ, цвет голубой)
+                            .art Артикул:18485
+                            .product-button
+                                button.order 
+                                    img(src="images/buscket.svg", alt="")
+                                    .order-text Заказать
+                                button.compare 
+                                    img(src="images/compare.svg", alt="")
+                                button.like 
+                                    img.like-active(src="images/like.svg", alt="")
+        #contrast.profile-podmenu
+            .content.contrast-top 
+                .brend-filter
+                    .filter-checkbox
+                        input(type="checkbox", name="AstralPool", id="1", class="checkbox")
+                        label(for="1") Только различия
+                        input(type="checkbox", name="Bestway", id="2", class="checkbox")
+                        label(for="2") Все  характеристики
+                .product-line
+                    .product-cards
+                        - for (var x = 0; x < 2; x++)
+                            .card 
+                                .product-image
+                                    img(src="images/catalog-pool.png", alt="")
+                                .price 476 000 ₽
+                                a(class='.product-title' href='product-page.html') Композитный бассейн ROYAL 9037 (с ППУ, цвет голубой)
+                                .art Артикул:18485
+                                .product-button
+                                    button.order 
+                                        img(src="images/buscket.svg", alt="")
+                                        .order-text Заказать
+                                    button.compare 
+                                        img(src="images/compare.svg", alt="")
+                                    button.like 
+                                        img.like-active(src="images/like.svg", alt="")
+            .contrast-bottom 
+                .separator-h 
+                .contrast-bottom-under 
+                    .contrast-titles 
+                        .contrast-text  Рейтинг
+                        .contrast-text  Ширина
+                        .contrast-text  Глубина
+                        .contrast-text  Длина
+                        .contrast-text  Объем
+                        .contrast-text  Форма
+                        .contrast-text  Дно
+                    .separator-v 
+                    .contrast-product
+                        .contrast-values
+                            .contrast-text.rating 
+                                .star-active
+                                .star-active
+                                .star-active
+                                .star-active
+                                .star
+                            .contrast-text  370 см
+                            .contrast-text  1.4 - 1.7 м
+                            .contrast-text  900 см
+                            .contrast-text  36
+                            .contrast-text  Прямоугольник
+                            .contrast-text  Прямое
+                        .contrast-values
+                            .contrast-text.rating 
+                                .star-active
+                                .star-active
+                                .star-active
+                                .star-active
+                                .star
+                            .contrast-text  370 см
+                            .contrast-text  1.4 - 1.7 м
+                            .contrast-text  900 см
+                            .contrast-text  36
+                            .contrast-text  Прямоугольник
+                            .contrast-text  Прямое
+        include ./components/footer.pug

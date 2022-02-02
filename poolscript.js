@@ -9,6 +9,8 @@ $(document).ready(function(){
     $('#description').show()
     $('.delivery-podmenu').hide()
     $('#register-offer').show()
+    $('.profile-podmenu').hide()
+    $('#personal-data').show()
     $('#first-button').css({
         'background' : '#0044FF'
     })
@@ -63,6 +65,9 @@ $(document).ready(function(){
         $('.help-form').hide();
         return false;
     });
+    $('.return-profile').click(function(){
+        $(location).attr('href','myprofile.html');
+    })
     $('.return-site').click(function(){
         $(location).attr('href','index.html');
     })
@@ -153,7 +158,99 @@ $(document).ready(function(){
                 'background' : '#0044FF'
             })
         }
+        if ($(this).text() == 'Личные данные'){
+            $('.profile-podmenu').hide()
+            $('#personal-data').show()
+            $('.catalog-menu-part').css({
+                'background' : '#101014'
+            })
+            $(this).css({
+                'background' : '#0044FF'
+            })
+        }
+        if ($(this).text() == 'Сменить пароль'){
+            $('.profile-podmenu').hide()
+            $('#change-password').show()
+            $('.catalog-menu-part').css({
+                'background' : '#101014'
+            })
+            $(this).css({
+                'background' : '#0044FF'
+            })
+        }
+        if ($(this).text() == 'Текущие заказы'){
+            $('.profile-podmenu').hide()
+            $('#now-offers').show()
+            $('.catalog-menu-part').css({
+                'background' : '#101014'
+            })
+            $(this).css({
+                'background' : '#0044FF'
+            })
+        }
+        if ($(this).text() == 'История заказов'){
+            $('.profile-podmenu').hide()
+            $('#history-offers').show()
+            $('.catalog-menu-part').css({
+                'background' : '#101014'
+            })
+            $(this).css({
+                'background' : '#0044FF'
+            })
+        }
+        if ($(this).text() == 'Корзина'){
+            $('.profile-podmenu').hide()
+            $('#profile-buscket').show()
+            $('.catalog-menu-part').css({
+                'background' : '#101014'
+            })
+            $(this).css({
+                'background' : '#0044FF'
+            })
+        }
+        if ($(this).text() == 'Избранное'){
+            $('.profile-podmenu').hide()
+            $('#favourites').show()
+            $('.catalog-menu-part').css({
+                'background' : '#101014'
+            })
+            $(this).css({
+                'background' : '#0044FF'
+            })
+        }
+        if ($(this).text() == 'Сравнение'){
+            $('.profile-podmenu').hide()
+            $('#contrast').show()
+            $('.catalog-menu-part').css({
+                'background' : '#101014'
+            })
+            $(this).css({
+                'background' : '#0044FF'
+            })
+        }
     });
+    $('.blue-link').click(function(){
+        if ($(this).text() == '«Оплата».'){
+            $('.delivery-podmenu').hide()
+            $('#condition').show()
+            $('.catalog-menu-part').css({
+                'background' : '#101014'
+            })
+            $('.delivery-menu').children().eq(1).find('.catalog-menu-part').css({
+                'background' : '#0044FF'
+            })
+        }
+        if ($(this).text() == '«Доставка».'){
+            $('.delivery-podmenu').hide()
+            $('#delivery-condition').show()
+            $('.catalog-menu-part').css({
+                'background' : '#101014'
+            })
+            $('.delivery-menu').children().eq(2).find('.catalog-menu-part').css({
+                'background' : '#0044FF'
+            })
+        }
+    })
     $('.color').click(function(){
         if ($(this).attr('id') == 'white') {
             $('.main-image').attr('src','images/catalog-pool.png')
