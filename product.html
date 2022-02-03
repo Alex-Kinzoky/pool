@@ -36,7 +36,7 @@
     </div>
     <div class="content content-product">
       <div class="nav-line">
-        <div class="nav-line-title">Каталог</div>
+        <div class="nav-line-title">Композитные бассейны</div>
         <div class="nav-line-path"><a href="index.html">Главная </a><img class="nav-line-between" src="images/nav-line-between.svg" alt=""/><a href="catalog.html">Каталог</a><img class="nav-line-between" src="images/nav-line-between.svg" alt=""/><a class="active" href="product.html">Бассейны</a></div>
       </div>
       <div class="product-slide">
@@ -84,19 +84,22 @@
             <div class="product-list-top-part" id="sort">
               <div class="top-part-text">Сортировка</div><img src="images/sort.svg" alt=""/>
             </div>
-            <div class="product-list-top-part" id="filter"><img src="images/filter.svg" alt=""/>
-              <div class="top-part-text">Фильтровать</div>
+            <div class="product-list-top-part">
+              <div id="filter"><img src="images/filter.svg" alt=""/>
+                <div class="top-part-text">Фильтровать</div>
+              </div>
               <div class="drop-filter card">
                 <div class="filter-title">Цена </div>
                 <div class="price-filter">
                   <div class="slider">
-                    <input class="input-slider" type="range" min="0" step="1" max="13000" value="0" id="start"/>
-                    <input class="input-slider" type="range" min="0" step="1" max="13000" value="10000" id="end"/>
+                    <div class="grey-line"></div>
                     <div class="range-line"></div>
+                    <input class="input-slider" type="range" min="2000" step="1" max="13000" value="0" id="start"/>
+                    <input class="input-slider" type="range" min="2000" step="1" max="13000" value="10000" id="end"/>
                   </div>
                   <div class="input-slider"> 
-                    <input type="text" placeholder="От 2000"/>
-                    <input type="text" placeholder="До 10 000"/>
+                    <input type="number" placeholder="От 2000" id="start-i"/>
+                    <input type="number" placeholder="До 10 000" id="end-i"/>
                   </div>
                 </div>
                 <div class="brend-filter">
@@ -267,6 +270,46 @@
             <button class="product-list-number number-arrow"><img src="images/number-arrow.svg" alt=""/></button>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="card card-help product-card"><img src="images/card.svg" alt=""/>
+      <div class="card-text">Заявка на товар успешно отправлена!</div><a class="help-button return-site" href="index.html">Вернуться на сайт</a>
+    </div>
+    <div class="help product-help">
+      <div class="label">Товар под заказ</div>
+      <div class="content">
+        <form class="help-form" action="" method="post">
+          <div class="input-contact product-form">
+            <div class="text">Название товара*</div>
+            <div class="input blue-border-button">
+              <input type="text" name="product"/>
+            </div>
+            <div class="text">Ваше имя*</div>
+            <div class="input blue-border-button">
+              <input type="text" name="name"/>
+            </div>
+            <div class="text">Телефон*</div>
+            <div class="input blue-border-button">
+              <input type="tel" name="phone" placeholder="+7(999) 999-99-99"/>
+            </div>
+            <div class="text">Email*</div>
+            <div class="input blue-border-button">
+              <input type="email" name="email" placeholder="mail@domen.com"/>
+            </div>
+            <div class="text">Сообщение*</div>
+            <div class="input blue-border-button textarea">
+              <textarea name="mess" cols="30" rows="10"></textarea>
+            </div>
+          </div>
+          <div class="help-text">
+            Нажимая на кнопку «Отправить», Вы соглашаетесь с условиями на передачу
+            персональных данных
+          </div>
+          <div class="help-bottom">
+            <input class="help-button width" id="first-button" type="submit" value="Отправить"/>
+            <button class="blue-border-button width">Сбросить</button>
+          </div>
+        </form>
       </div>
     </div>
     <div class="footer">

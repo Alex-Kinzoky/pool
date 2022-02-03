@@ -388,13 +388,18 @@ body {
   .card-help {
     /*width: calc(100vw * (833 / 1920));*/
     /*height: calc(100vw * (478 / 1920));*/
+    
     width: 833px;
     height: 478px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
-  
+    .card-text{
+      font-size: 40px;
+      margin-top: -20px;
+      margin-bottom: 20px;
+    }
     img {
       width: 100%;
     }
@@ -731,6 +736,9 @@ body {
           img{
               padding: 0 15px;
           }
+          #filter{
+            display: flex;
+          }
       }
       .product-list-numbers{
           display: flex;
@@ -818,18 +826,20 @@ body {
     width: 258px;
     position: relative;
     pointer-events: none;
+    height: 50px;
     #end{
-        margin-top: -30px;
+        /*margin-top: -30px;*/
         &::-webkit-slider-runnable-track{
             background:none;
         }
     }
     input[type="range"]{
-        margin: 30px 0;
+        margin: 20px 0;
         -webkit-appearance: none; 
+        appearance: none;
         display: block;
         width: 258px;
-        
+        position: absolute;
         &::-ms-track{
             cursor: pointer;
             background: transparent; /* Скрывает слайдер, чтобы можно было добавить собственные стили. */
@@ -838,7 +848,7 @@ body {
             
         }
         &::-webkit-slider-runnable-track{
-            background-color: #333345;
+            /*background-color: #333345;*/
             height: 2px;
         }
         &::-webkit-slider-thumb{
@@ -852,12 +862,21 @@ body {
         }
         
     }
+    .grey-line{
+      width: 100%;
+      height: 2px;
+      background-color: #333345;
+      margin-top: 20px;
+      position: absolute;
+    }
     .range-line{
         height: 2px;
         background: linear-gradient(97.16deg, #0044FF 35.08%, #00A3FF 101.27%);
         position: absolute;
-        margin-top: -33px;
-    }
+        margin-top: 20px;
+      }
+    
+    
         
     input[type="range"]::-webkit-slider-thumb {
         pointer-events: all;
@@ -877,8 +896,17 @@ body {
         border-radius: 18px;
         border: none;
         padding: 8px 20px;
+        font-size: 20px;
+        appearance: none;
         &::placeholder{
             font-size: 20px;
+            color: #747478;
+        }
+        &::-webkit-outer-spin-button{
+          display: none;
+        }
+        &::-webkit-inner-spin-button{
+          display: none;
         }
       } 
   }
@@ -1769,6 +1797,82 @@ body {
   }
   .inline{
     display: inline;
+  }
+  .product-help{
+    width: 435px;
+    height: 800px;
+    border-radius: 25px;
+    background-color: #101014;
+    padding: 27px 30px 64px 30px;
+    position: fixed;
+    bottom: 20px;
+    right: 120px;
+    margin: 0;
+    .label{
+      font-size: 40px;
+    }
+    .help-form{
+      height: auto;
+      .help-text{
+        margin-top: 11px;
+        margin-bottom: 20px;
+        width: 375px;
+        font-size: 18px;
+      }
+      .help-bottom{
+        display: flex;
+        justify-content: space-between;
+        width: 375px;
+        .width{
+          width: 182px;
+          height: 57px;
+          font-size: 20px;
+          border-radius: 20px;
+        }
+      }
+      .product-form{
+        flex-direction: column;
+        .text{
+          margin-top: 17px;
+          margin-bottom: 7px;
+          font-size: 20px;
+        }
+        .blue-border-button{
+          border-radius: 20px;
+          align-items: center;
+          padding: 0 34px;
+          width: 375px;
+          height: 44px;
+          box-sizing: border-box;
+          input{
+            &::placeholder{
+              color: #A3A3A6;
+              font-size: 18px;
+            }
+            font-size: 18px;
+            
+          }
+        }
+        .textarea{
+          height: 149px;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          textarea{
+            width: 100%;
+            height: 100%;
+            background: none;
+            border: none;
+            outline: none;
+          }
+        }
+      }
+    }
+    
+  }
+  .product-card{
+    position: fixed;
+    right: 120px;
+    bottom: 20px;
   }
   @media (max-width: 1748px) {
     .header-content-text-big {

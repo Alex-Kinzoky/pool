@@ -11,8 +11,33 @@ $(document).ready(function(){
     $('#register-offer').show()
     $('.profile-podmenu').hide()
     $('#personal-data').show()
+    $('.product-help').hide()
     $('#first-button').css({
         'background' : '#0044FF'
+    })
+    $(document).mouseup( function(e){ 
+		var div = $( ".product-help" );
+		if ( !div.is(e.target)  && div.has(e.target).length === 0 ) { 
+			div.hide(); 
+		}
+        var div1 = $( ".menu-block" );
+		if ( !div1.is(e.target)  && div1.has(e.target).length === 0 ) { 
+			div1.hide(); 
+		}
+        var div2 = $( ".drop-filter" );
+		if ( !div2.is(e.target)  && div2.has(e.target).length === 0 ) { 
+			div2.hide(); 
+		}
+        var div3 = $( ".product-card" );
+		if ( !div3.is(e.target)  && div3.has(e.target).length === 0 ) { 
+			div3.hide(); 
+		}
+	});
+    $('.width#first-button').click(function(){
+        $('.product-help').hide()
+    })
+    $('.order ').click(function(){
+        $('.product-help').show()
     })
 	$('.menu-button').click(function(){
 		$('.menu-block').slideToggle(300, function(){
@@ -308,28 +333,48 @@ $(document).ready(function(){
     });
 
     sliders.forEach((slider) => {
-        slider.addEventListener('change', () => {
+        slider.addEventListener('mousemove', () => {
             console.log(`from ${sliders[0].value} to ${sliders[1].value}`);
         })
     });
-    var start = (259/13000) * $('#start').val()
-    var end = (259/13000) * $('#end').val()
+    var start = (259/(sliders[0].max - sliders[0].min)) * ($('#start').val() - sliders[0].min)
+    var end = (259/(sliders[1].max - sliders[1].min)) * ($('#end').val() - sliders[1].min)
     $(".range-line").css({
-        'margin-left' : start+20,
-        'width' : end-start-35
+        'margin-left' : start,
+        'width' : end-start
     })
-    $(".input-slider").change(function(){
-        var start = (259/13000) * $('#start').val()
-        var end = (259/13000) * $('#end').val()
+    $(".slider").mousemove(function(){
+        var start_i = (259/(sliders[0].max - sliders[0].min)) * $('#start').val() 
+        var start = (259/(sliders[0].max - sliders[0].min)) * ($('#start').val() - sliders[0].min)
+        var end_i = (259/(sliders[1].max - sliders[1].min)) * $('#end').val() 
+        var end = (259/(sliders[1].max - sliders[1].min)) * ($('#end').val() - sliders[1].min)
+        $('#start-i').attr('placeholder', 'От '+parseInt(start_i / (259/(sliders[0].max - sliders[0].min))))
+        $('#end-i').attr('placeholder', 'До '+parseInt(end_i / (259/(sliders[1].max - sliders[1].min))))
         $(".range-line").css({
-            'margin-left' : start+20,
-            'width' : end-start-35
+            'margin-left' : start,
+            'width' : end-start
         })
     }) 
+    $('#start-i').change(function(){
+        var start = (259/(sliders[0].max - sliders[0].min)) * ($('#start-i').val() - sliders[0].min)
+        $('#start').val($('#start-i').val())
+        $(".range-line").css({
+            'margin-left' : start,
+            'width' : end-start
+        })
+    })
+    $('#end-i').change(function(){
+        var end = (259/(sliders[1].max - sliders[1].min)) * ($('#end-i').val() - sliders[1].min)
+        $('#end').val($('#end-i').val())
+        $(".range-line").css({
+            'margin-left' : start,
+            'width' : end-start
+        })
+    })
     $('#filter').click(function(){
         if ($('.drop-filter').is(':visible')){
-            $('.drop-filter').hide()
-        } else{
+                $('.drop-filter').hide()
+        } else{ 
             $('.drop-filter').show()
         }
     });

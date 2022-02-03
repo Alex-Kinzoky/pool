@@ -6,7 +6,7 @@ html
         include ./components/header.pug 
         .content.content-product
             .nav-line
-                .nav-line-title Каталог
+                .nav-line-title Композитные бассейны
                 .nav-line-path
                     a(href="index.html") Главная 
                     img(src="images/nav-line-between.svg", alt="" class="nav-line-between")
@@ -53,19 +53,22 @@ html
                         #sort.product-list-top-part
                             .top-part-text Сортировка
                             img(src="images/sort.svg", alt="")
-                        #filter.product-list-top-part
-                            img(src="images/filter.svg", alt="")
-                            .top-part-text Фильтровать
+                        .product-list-top-part
+                            #filter
+                                img(src="images/filter.svg", alt="")
+                                .top-part-text Фильтровать
                             .drop-filter.card
                                 .filter-title Цена 
                                 .price-filter
                                     .slider
-                                        input(type="range" min="0" step="1" max="13000" value="0" id="start" class="input-slider") 
-                                        input(type="range" min="0" step="1" max="13000" value="10000" id="end" class="input-slider") 
+                                        .grey-line
                                         .range-line
+                                        input(type="range" min="2000" step="1" max="13000" value="0" id="start" class="input-slider") 
+                                        input(type="range" min="2000" step="1" max="13000" value="10000" id="end" class="input-slider") 
+                                        
                                     .input-slider 
-                                        input(type="text" placeholder="От 2000")
-                                        input(type="text" placeholder="До 10 000")
+                                        input(type="number" placeholder="От 2000" id='start-i')
+                                        input(type="number" placeholder="До 10 000" id='end-i')
                                 .brend-filter
                                     .filter-title Бренд
                                     .filter-checkbox
@@ -103,4 +106,35 @@ html
                         a.product-list-number 6
                         button.product-list-number.number-arrow
                             img(src="images/number-arrow.svg", alt="")
+        .card.card-help.product-card
+                    img(src="images/card.svg", alt="")
+                    .card-text Заявка на товар успешно отправлена!
+                    a.help-button.return-site(href="index.html") Вернуться на сайт
+        .help.product-help
+            .label Товар под заказ
+            .content
+                
+                form.help-form(action="", method="post")
+                    .input-contact.product-form
+                        .text Название товара*
+                        .input.blue-border-button
+                            input(type="text", name="product")
+                        .text Ваше имя*
+                        .input.blue-border-button
+                            input(type="text", name="name")
+                        .text Телефон*
+                        .input.blue-border-button
+                            input(type="tel", name="phone", placeholder="+7(999) 999-99-99")
+                        .text Email*
+                        .input.blue-border-button
+                            input(type="email", name="email", placeholder="mail@domen.com")
+                        .text Сообщение*
+                        .input.blue-border-button.textarea
+                            textarea(name="mess", cols="30", rows="10")
+                    .help-text
+                        | Нажимая на кнопку «Отправить», Вы соглашаетесь с условиями на передачу
+                        | персональных данных
+                    .help-bottom
+                        input.help-button.width#first-button(type="submit", value="Отправить")
+                        button.blue-border-button.width Сбросить
         include ./components/footer.pug
