@@ -1,4 +1,9 @@
   @media (max-width: 640px) {
+    .header-image{
+      .pool{
+        display: none;
+      }
+    }
     .nav-line{
         height: 100px;
         .nav-line-title{
