@@ -200,7 +200,8 @@ body {
   
   .header-content-text {
     width: calc(100vw * (784 / 1920));
-    height: calc(100vw * (495 / 1920));
+    /*height: calc(100vw * (495 / 1920));*/
+    height: 495px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -225,7 +226,7 @@ body {
     font-weight: 400;
     font-size: 30px;
     width: calc(100vw * (451 / 1920));
-    height: 88px;
+    height: calc(100vw * (88 / 1920));
   }
   
   .offers {
@@ -594,18 +595,24 @@ body {
           }
       }
   }
+  .gradient-button{
+    position: relative;
+    border-radius: 34px;
+    border-width: 2px;
+    margin: 11px;
+    background:linear-gradient(94.29deg, #0044FF 26.91%, #00A3FF 106.34%);
+    padding: 1px;
+}
   .catalog-menu{
       display: flex;
       flex-wrap: wrap;
+      padding-right: 59px;
+      justify-content: space-between;
+      .gradient-button{
+        margin: 11px 0;
+      }
   }
-  .gradient-button{
-      position: relative;
-      border-radius: 34px;
-      border-width: 2px;
-      margin: 11px;
-      background:linear-gradient(94.29deg, #0044FF 26.91%, #00A3FF 106.34%);
-      padding: 1px;
-  }
+  
   .catalog-menu-part{
       padding: calc(100vw * (20 / 1920)) calc(100vw * (39 / 1920));
       border-radius: 34px;
@@ -628,13 +635,16 @@ body {
       padding-top: 63px;
       flex-wrap: wrap;
       .catalog-podmenu-list{
-        min-width: 200px;
         padding-right: 5px;
         .catalog-podmenu-title{
             display: block;
             font-size: 30px;
             font-weight: 400;
             padding: 14px 0;
+            max-width: calc(100vw * (764 / 1920));
+            a{
+              width: calc(100vw * (764 / 1920));
+            }
         }
         .catalog-podmenu-link{
             display: block;
@@ -768,8 +778,8 @@ body {
     padding: 10px 25px;
     width: calc(100vw - (100vw * (341 / 1920)) - 137px);
     .card{
-        margin: 13px 7px;
-        padding: 38px 28px;
+        margin: calc(100vw * (13 / 1920)) calc(100vw * (7 / 1920));
+        padding: calc(100vw * (38 / 1920)) calc(100vw * (28 / 1920));
         width: 281px;
         height: 376px;
         display: flex;
@@ -962,13 +972,14 @@ body {
             flex-direction: column;
             width: calc(100vw * (950 / 1920));
             .product-about-image{
-                width: 850px;
+                width: calc(100vw * (850 / 1920));
                 padding-bottom: 39px;
             }
             .product-about-image-color {
-                padding-left:175px;
+                padding-left:calc(100vw * (175 / 1920));
                 img{
-                    margin: 25px;
+                    margin: calc(100vw * (25 / 1920));
+                    width: calc(100vw * (63 / 1920));
                 }
             }
         }
@@ -1030,9 +1041,9 @@ body {
       .product-about-info{
         .product-about-info-menu{
             display: flex;
-            width: 977px;
+            width: calc(100vw * (977 / 1920));
             justify-content: space-between;
-            padding-left: 175px;
+            padding-left: calc(100vw * (175 / 1920));
             .active{
                 background : linear-gradient(180deg, #0044FF 35.08%, #00A3FF 101.27%);
                 -webkit-background-clip : text;
@@ -1066,7 +1077,7 @@ body {
             
         }
         .product-about-info-content{
-            padding: 77px 0 150px 190px;
+            padding: calc(100vw * (77 / 1920)) 0 calc(100vw * (150 / 1920)) calc(100vw * (190 / 1920));
             #specification{
                 .product-about-table{
                     .product-about-table-part {
@@ -1180,7 +1191,7 @@ body {
             width: calc(100vw * (337 /1920));
             height: calc(100vw * (452 / 1920));
             min-height: 0;
-            padding: 38px 28px;
+            padding: calc(100vw * (38 / 1920)) calc(100vw * (28 / 1920));
             margin: calc(100vw * (17 /1920));
           }
          
@@ -1874,254 +1885,321 @@ body {
     right: 120px;
     bottom: 20px;
   }
-  @media (max-width: 1748px) {
-    .header-content-text-big {
-      font-size: 70px;
+  @media (max-width: 1536px){
+    .header-content-text{
+      height: calc(100vw * (321 / 1366));
     }
-  
-    .header-content-text-small {
-      font-size: 24px;
-    }
-  }
-  
-  @media (max-width: 1560px) {
-    body {
-      font-size: 20px;
-    }
-  
-    .font-30, .about-us-item-h {
-      font-size: 24px;
-    }
-  
-    .about-us-item-text {
-      font-size: 18px;
-    }
-  
-    .header-content-text-big {
-      font-size: 60px;
-    }
-  
-    .header-content-text-small {
-      font-size: 20px;
-    }
-  
-    .header-content-text-button {
-      font-size: 24px;
-      height: 60px;
-    }
-  
-    .offer-card-line .card {
-      font-size: 24px;
-    }
-  
-    .about-us-item {
-      width: 320px;
-    }
-  
-    .label {
+    .header-content-text-big{
       font-size: 50px;
     }
-  
-    .contact-text-part {
-      font-size: 30px;
-    }
-  
-    .contact-text {
-      width: 540px;
-    }
-  
-    .label-text, .input-contact .input input::placeholder {
-      font-size: 24px;
-    }
-  
-    .about-us-2 {
-      height: 800px;
-    }
-  
-    .help-button {
-      height: 95px;
-      font-size: 24px;
-    }
-  
-    .help-text {
-      font-size: 18px;
-    }
-  
-    .footer .content {
-      font-size: 20px;
-      height: 230px;
-    }
-    .card-help{
-        .help-button{
-            font-size: 30px;
-        }
-    }
-    //CATALOG
-  }
-  
-  @media (max-width: 1366px) {
-    .header-content-text-big {
-      font-size: 50px;
-    }
-  
-    .header-content-text-small {
-      font-size: 18px;
-    }
-  
-    .header-content-text-button {
-      font-size: 20px;
-      height: 50px;
-    }
-  
-    .offer-card-line .card {
+    .header-content-text-small{
       font-size: 20px;
     }
-  
-    .label {
+    .header-content-text-button{
+      font-size: 20px;
+      width: calc(100vw * (348 / 1366));
+      height: calc(100vw * (68 / 1366));
+    }
+    .label{
       font-size: 40px;
     }
-  
-    .about-us-item-h {
-      font-size: 20px;
+    .offer-card-line{ 
+      .card{
+        width: calc(100vw * (411 / 1366));
+        height: calc(100vw * (239 / 1366));
+        font-size: 22px;
+        img{
+          width: calc(100vw * (85 / 1366));
+          height: calc(100vw * (91 / 1366));
+        }
+        &:first-child{
+          img{
+            width: calc(100vw * (185 / 1366));
+          }
+        }
+      }
+      
     }
-  
-    .about-us-item-text {
-      font-size: 16px;
-    }
-  
-    .help-button {
-      height: 85px;
-      font-size: 20px;
-    }
-  
-    .input-contact .input input::placeholder {
-      font-size: 20px;
-    }
-  
-    .help-text {
-      font-size: 16px;
-    }
-  
-    .help-form {
-      height: 350px;
-    }
-  
-    .contact-text-part {
-      font-size: 24px;
-    }
-  
-    .contact-text {
-      width: 440px;
-      height: 180px;
-    }
-  
-    .footer .content {
+    .about-us-1-content-text{
       font-size: 18px;
-      height: 180px;
+      width: calc(100vw * (624 / 1366));
     }
-  
-    .about-us-2 {
-      height: 700px;
+    .about-us-1-content-images{
+      img{
+        width: calc(100vw * (312 / 1366));
+        height: calc(100vw * (367 / 1366));
+      }
     }
-  }
-  
-  @media (max-width: 1160px) {
+    .about-us-item{
+      width: calc(100vw * (294 / 1366));
+      height: calc(100vw * (330 / 1366));
+    }
+    .about-us-item-icon{
+      width: calc(100vw * (64 / 1366));
+      height: calc(100vw * (54 / 1366));
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .about-us-item-h{
+      font-size: 22px;
+    }
+    .about-us-item-text{
+      font-size: 18px;
+    }
+    .about-us-2{
+      height: 750px;
+    }
+    .label-text{
+      font-size: 22px;
+    }
+    .input-contact {
+      .input {
+        input{
+          height: 60px;
+          &::placeholder{
+            font-size: 22px;
+          }
+        }
+      }
+    }
+    .help-text{
+      font-size: 16px;
+    }
+    .help-button{
+      width: calc(100vw * (415 / 1366));
+      height: calc(100vw * (77 / 1366));
+      font-size: 22px;
+    }
+    .contact-text{
+      height: 143px;
+      width: 461px;
+      .contact-text-part{
+        font-size: 22px;
+      }
+    }
+    .map{
+      img{
+        width: calc(100vw * (486 / 1366));
+        height: calc(100vw * (562 / 1366));
+      }
+    }
+    .contact-decor{
+      width: calc(100vw * (975 / 1366));
+      height: calc(100vw * (540 / 1366));
+    }
+    .footer{
+      font-size: 18px;
+    }
+    .menu-block-list{
+      font-size: 22px;
+      grid-template-columns: repeat(2, calc(100vw * (215 / 1366)));
+      grid-template-rows: repeat(4, 55px);
+    }
+    .menu-block{
+      height: calc(100vw * (693 / 1366));
+    }
+    .nav-line {
+      .nav-line-title{
+        font-size: 40px;
+      }
+      .nav-line-path{
+        font-size: 18px;
+        img{
+          width: 10px;
+          height: 19px;
+          padding: 0 8px;
+        }
+      }
+    }
+    .catalog-menu{
+      font-size: 18px;
+      .gradient-button{
+        margin: 8px 0;
+        .catalog-menu-part{
+          padding: calc(100vw * (15 / 1366)) calc(100vw * (22 / 1366));
+        }
+      }
+    }
+    .catalog-podmenu{
+      padding: calc(100vw * (107 / 1366));
+    }
+    .show-all{
+      font-size: 16px;
+      img{
+        width: 65px;
+        margin-left: 36px;
+      }
+    }
+    .catalog-podmenu-all{
+      .catalog-podmenu-list{
+        .catalog-podmenu-title{
+          font-size: 22px;
+        }
+        .catalog-podmenu-link{
+          font-size: 18px;
+        }
+      }
+    }
     .menu-left{
-        width: calc(100vw * (350 / 1160));
-        padding: 20px 25px 20px 44px;
+      box-sizing: border-box;
+      width: calc(100vw * (305 / 1366));
+      padding: calc(100vw * (31 / 1366)) calc(100vw * (13 / 1366)) calc(100vw * (32 / 1366)) 50px;
+      border-top-right-radius: 35px;
+      border-bottom-right-radius: 35px;
+      .active-left-menu{
+        .menu-left-part-text{
+          .menu-left-part-image{
+            width: 11px;
+            height: 17px;
+          }
+        }
+        
+      }
+      .menu-left-part{
+        a{
+          font-size: 18px;
+          padding: 12px 0 0;
+          .menu-left-part-image{
+            width: 11px;
+            height: 17px;
+          }
+        }
+        
+        img{
+          width: 11px;
+          height: 17px;
+        }
+      }
     }
     .product-list{
-        .product-list-top{
-            .product-list-top-part{
-                padding: 0 15px;
-            }
+      .product-list-top-part{
+        font-size: 18px;
+        padding: 0 40px;
+        img{
+          width: 23px;
+          height: 21px;
         }
-    }
-    .card-help{
-      .help-button{
-        font-size: 30px;
       }
     }
-    .menu-block-list {
+    
+    .arrow-up-text{
       font-size: 20px;
     }
-  
-    .menu-block-top {
-      height: 100px;
+    .arrow-up-arrow{
+      width: 119px;
+      height: 7px;
     }
-  
-    .header-content-text-big {
-      font-size: 40px;
-    }
-  
-    .header-content-text-small {
-      font-size: 16px;
-    }
-  
-    .header-content-text-button {
-      font-size: 18px;
-      height: 45px;
-    }
-  
-    .label {
-      font-size: 30px;
-    }
-  
-    .offer-card-line .card, .about-us-item-h {
-      font-size: 18px;
-    }
-  
-    .about-us-item-text {
-      font-size: 14px;
-    }
-  
-    .about-us-item {
-      width: 245px;
-      height: 330px;
-  
-      img {
-        width: 53px;
-        height: 53px;
+    .product-cards{
+      padding-left: 22px;
+      .card{
+        box-sizing: border-box;
+        width: 235px;
+        height: 321px;
+        padding: calc(100vw * (26 / 1366)) calc(100vw * (20 / 1366));
+        border-radius: 35px;
+        .product-image{
+          height: 104px;
+        }
+        .price{
+          font-size: 22px;
+        }
+        .product-title{
+          font-size: 16px;
+        }
+        .art{
+          font-size: 14px;
+        }
+        .product-button{
+          .order{
+            width: 125px;
+            height: 33px;
+            font-size: 16px;
+            img{
+              width: 26px;
+            }
+          }
+          .compare{
+            img{
+              width: 15px;
+            }
+          }
+          .like{
+            img{
+              width: 23px;
+            }
+          }
+        }
       }
     }
-  
-    .label-text {
-      font-size: 20px;
+    .product-about {
+      .product-about-title{
+        font-size: 22px;
+      }
     }
-  
-    .input-contact .input input::placeholder {
-      font-size: 18px;
+    .product-about{
+      .product-about-top {
+        .product-about-top-left{
+          .product-about-action{
+            .product-about-action-bottom{
+              font-size: 12px;
+              .product-about-compare{
+                img{
+                  width: 20px;
+                  height: 29px;
+                }
+              }
+              .product-about-like{
+                img{
+                  width: 29px;
+                  height: 28px;
+                }
+              }
+            }
+            .product-about-price{
+              font-size: 40px;
+            }
+            .product-about-order{
+              width: 188px;
+              height: 49px;
+              font-size: 20px;
+              img{
+                width: 35px;
+              }
+            }
+          }
+        }
+      }  
+      .product-about-table{
+        font-size: 18px;
+        .product-about-table-part{
+          grid-template-columns: 76px 45px auto;
+        }
+      }
+      .product-about-info {
+        .product-about-info-menu {
+          a {
+            .img{
+              width: 201px;
+            }
+            &:first-child{
+              .img{
+                width: 127px;
+              }
+            }
+          }
+          
+        }
+      }
     }
-  
-    .help-text {
-      font-size: 14px;
-      width: 440px;
+    .product-about-info-content{
+      .product-about-info-podmenu{
+        .description-text{
+          font-size: 18px;
+        }
+      }
     }
+    
+}
   
-    .help-button {
-      height: 65px;
-      font-size: 18px;
-    }
-  
-    .contact-text-part {
-      font-size: 20px;
-    }
-  
-    .contact-text {
-      width: 350px;
-      height: 120px;
-    }
-  
-    .footer .content {
-      font-size: 16px;
-      height: 150px;
-    }
-  
-    .about-us-2 {
-      height: 600px;
-    }
-  
-    .about-us-1-content-text {
-      font-size: 18px;
-    }
-  }
